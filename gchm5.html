@@ -1,0 +1,373 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A student-friendly science tutorial">
+	<meta name="keywords"   content="online course, science, biology,chemistry">
+	<meta name="author" content="Bryan Castillo">
+	<title>General Chemistry</title>
+	<link rel="stylesheet" href="./css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width = '230px';
+		document.getElementById('gridcontainer').style.marginLeft = '230px';
+	}
+
+	function closeSlideMenu(){
+		document.getElementById('side-menu').style.width = '0';
+		document.getElementById('gridcontainer').style.marginLeft = '0';
+	}
+	</script>
+		<script type="text/javascript" src="./script/gchmexam.js"></script>
+	</head>
+	<body>
+	<header>
+	<div class="container">
+		<span class="open-slide">
+	<a href="#" onclick="openSlideMenu()">
+		<svg width="30" height="30">
+				<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+				<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+		</svg>
+	</a>
+	</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<div class="lec">
+			<h3>General Chemistry Practice Exams</h3>
+<ul>
+	<li><a href="gchm5.html">Problem Solving</a></li>
+	<li><a href="gchmexam.html">Multiple Choice</a></li>
+<li class="targethover"><a href="#">Lectures<i class="fa fa-angle-right"></i></a>
+	<div class="submenu-1"><ul>
+			<li class="targethover-2"><a href="gchm1.html">Page 1</a></li>
+			<li  class="targethover-3"><a href="gchm2.html">Page 2</a></li>
+			<li  class="targethover-4"><a href="gchm3.html">Page 3</a></li>
+					<li  class="targethover-4"><a href="gchm4.html">Page 4</a></li>
+	</ul></div>
+</li>
+
+
+</ul></div>
+	</div>
+		<div id="branding"><h1><span class="highlight">Bryan's</span> SciTutor</h1></div>
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a><i class="fa fa-home"></i></li>
+		<li><a href="about.html">About Us</a><i class="fa fa-user"></i></li>
+		<li class="current"><a href="courses.html">Courses<i class="fa fa-clone"></i></a></li>
+		</ul>
+	</nav>
+	</div>
+	</header>
+<div id="examlayout">
+
+<section id="examain">
+
+<h2>General Chemistry Problem Solving</h2>
+<div class="examdirection">Practice your skills by answering the following problems (solutions and answers can be toggled
+	for viewing and hiding them).</div>
+
+<ol>
+<li>Complete the table below for the following elements or ions. (Topic: Notation on Elements)
+
+
+<table class="balance">
+<tr>
+<th>Element or Ion</th>
+<th>Number of Protons</th>
+<th>Number of Neutrons</th>
+<th>Number of Electrons</th>
+</tr>
+<tr>
+<td><span class="nuke"><sup>15</sup><sub>7</sub>N</span></td>
+<td style="text-align:center">7</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+
+<tr>
+<td><span class="nuke"><sup>32</sup><sub>16</sub>S<sup>2&#8722 </sup> </span></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">16</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">10</td>
+</tr>
+
+<tr>
+<td><span class="nuke"><sup>80</sup><sub>35</sub>Br<sup>&#8722 </sup></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">20</td>
+</tr>
+</table>
+</li><br>
+
+<div class="viewbutton"><button class="button_2" onclick="myAnswer1()"> View Answers (Complete Table)</button>
+</div><br>
+<div id="mySolution1" hidden>
+<table class="balance">
+	 <!--Answer in Question 1 !-->
+<tr>
+<th>Element or Ion</th>
+<th>Number of Protons</th>
+<th>Number of Neutrons</th>
+<th>Number of Electrons</th>
+</tr>
+<tr>
+<td><span class="nuke"><sup>15</sup><sub>7</sub>N</span></td>
+<td style="text-align:center">7</td>
+<td style="text-align:center; color:blue"><strong>8</strong></td>
+<td style="text-align:center; color:blue"><strong>7</strong></td>
+</tr>
+
+<tr>
+<td><span class="nuke"><sup>32</sup><sub>16</sub>S<sup>2&#8722 </sup> </span></td>
+<td style="text-align:center; color:blue"><strong>16</strong></td>
+<td style="text-align:center">16</td>
+<td style="text-align:center; color:blue"><strong>18</strong></td>
+</tr>
+
+<tr>
+<td style="color:blue"><strong><span class="nuke"><sup>29</sup><sub>14</sub>Si<sup>+4</sup></span></strong></td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">10</td>
+</tr>
+
+<tr>
+<td><span class="nuke"><sup>80</sup><sub>35</sub>Br<sup>&#8722 </sup></td>
+<td style="text-align:center; color:blue"><strong>35</strong></td>
+<td style="text-align:center; color:blue"><strong>45</strong></td>
+<td style="text-align:center; color:blue"><strong>36</strong></td>
+</tr>
+<tr>
+<td style="color:blue"><strong><span class="nuke"><sup>40</sup><sub>20</sub>Ca </span></strong></td>
+<td style="text-align:center">20</td>
+<td style="text-align:center; color:blue"><strong>20</strong></td>
+<td style="text-align:center">20</td>
+</tr>
+</table><br>
+</div>
+<li>Zinc has two naturally occuring isotopes which are Zn<sup>65</sup> (64.9292 amu) and Zn<sup>67</sup> (66.9271 amu).
+If zinc has an average atomic mass of 65.38 amu, what are the percentage abundances of each given isotope? (Topic: Average Atomic Mass)</li>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer2()"> View Solution and
+	Answer</button></div><br>
+<!--Answer No. 2 !-->
+<div id="mySolution2" hidden>
+<p>To solve for the percentage abundance, remember that the overall composition of the atomic mass is 100%. Thus, you can designate the first percentage
+abundance as x while the second as 1 &#8722 x to follow 100%. The solution for this problem is:</p>
+<p class="equation">&sum; (%Abundance)(Isotopic Mass) = (x)(64.9292 amu) + (1 &#8722 x)(66.9271 amu) = 65.38 amu</p>
+<p>Solving for x,  x = 0.7744  and then  1 &#8722 x = 1 &#8722 0.7744 = 0.2256</p>
+<p>Therefore, the isotopes have <span style="color:blue"><strong>77.44% Zn<sup>65</sup></strong></span> and <span style="color:blue"><strong>22.56% Zn<sup>67</sup></strong></span></p>
+</div>
+
+<li>Caustic soda, NaOH, can be prepared commercially by the reaction of Na<sub>2</sub>CO<sub>3</sub> with slaked lime, Ca(OH)<sub>2</sub>.
+How many molecules of NaOH can be obtained by treating 1.350 kg of Na<sub>2</sub>CO<sub>3</sub> with Ca(OH)<sub>2</sub>? (Topic: Avogadro's Number)</li>
+<p class="equation">Na<sub>2</sub>CO<sub>3</sub> &nbsp + &nbsp Ca(OH)<sub>2</sub> &#8594 CaCO<sub>3</sub> &nbsp + &nbsp 2NaOH</p>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer3()"> View Solution and Answer</button></div><br>
+<!--Answer No. 3 !-->
+<div id="mySolution3" hidden>
+<p>To solve for the molecules of NaOH, use the principle of reaction stoichiometry to achieve moles of NaOH and then use Avogadro's number to
+obtain the molecules. Initially, convert the given kilograms to grams (note that 1 kg = 1000 grams):</p>
+<p>The given is 1.350 kg Na<sub>2</sub>CO<sub>3</sub> = 1350 g Na<sub>2</sub>CO<sub>3</sub>,</p>
+
+<div class="frac"><div class="maineq"> molecules of NaOH = (1350 g Na<sub>2</sub>CO<sub>3</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole Na<sub>2</sub>CO<sub>3</sub></span>
+<span class="Denominator">106 grams Na<sub>2</sub>CO<sub>3</sub></span></span>)(<span class="Fraction"><span class="Numerator">2 moles NaOH</span>
+<span class="Denominator">1 mole Na<sub>2</sub>CO<sub>3</sub></span></span>)(<span class="Fraction"><span class="Numerator">6.022 x 10<sup>23</sup> molecules NaOH</span>
+<span class="Denominator">1 mole NaOH</span></span>) </div>
+<p class="equation">=<strong><span style="color:blue">1.53 x 10<sup>25</sup> molecules NaOH</span></strong></p>
+
+</div><br>
+<li>For the reaction of Ba(OH)<sub>2</sub> + 2HClO<sub>3</sub> &#8594 Ba(ClO<sub>3</sub>)<sub>2</sub> &nbsp + &nbsp 2H<sub>2</sub>O,
+what is the number of moles of H<sub>2</sub>O formed when 0.200 moles of Ba(OH)<sub>2</sub> is treated with 0.500 moles of HClO<sub>3</sub>?
+(Topic: Reaction Stoichiometry and Limiting Reactants)</li>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer4()"> View Solution and Answer</button></div><br>
+<!--Answer No. 4 !-->
+<div id="mySolution4" hidden>
+<p>The solution to find the moles of H<sub>2</sub>O is to determine first which of the following starting materials (Ba(OH)<sub>2</sub> and HClO<sub>3</sub>)
+is the limiting reactant. You can simply convert each into the moles of H<sub>2</sub>O:</p>
+<div class="frac"><div class="maineq"> moles of H<sub>2</sub>O from Ba(OH)<sub>2</sub>= ( 0.200 moles Ba(OH)<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">2 moles H<sub>2</sub>O</span>
+<span class="Denominator">1 mole Ba(OH)<sub>2</sub></span></span>) = 0.400 moles </div>
+<div class="frac"><div class="maineq"> moles of H<sub>2</sub>O from HClO<sub>3</sub> = ( 0.500 moles HClO<sub>3</sub>)</div>(<span class="Fraction"><span class="Numerator">2 moles H<sub>2</sub>O</span>
+<span class="Denominator">2 moles HClO<sub>3</sub></span></span>) = 0.500 moles  </div>
+<p>From the calculation, it shows that Ba(OH)<sub>2</sub> is the limiting reactant and the moles of H<sub>2</sub>O is <span style="color:blue"><strong>0.400 moles</strong></span>.</p>
+</div>
+<li>A mixture of 1 kg of CS<sub>2</sub> and 2 kg of Cl<sub>2</sub> is passed through a hot reaction tube where the following reaction to place:</li>
+<p class="equation">CS<sub>2</sub> + 3Cl<sub>2</sub> &#8594 CCl<sub>4</sub> + S<sub>2</sub>Cl<sub>2</sub></p>
+<p>How many grams of CCl<sub>4</sub> are produced from the reaction? (Topic: Reaction Stoichiometry and Limiting Reactants)</p>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer5()"> View Solution and Answer</button></div><br>
+<!--Answer No. 5 !-->
+<div id="mySolution5" hidden>
+<p>Same steps of solving as of question number 4 but this time, it starts with grams of the reactants:</p>
+<div class="frac"><div class="maineq"> moles of CCl<sub>4</sub> from CS<sub>2</sub>= ( 1000 grams CS<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole CS<sub>2</sub></span>
+<span class="Denominator">76 grams CS<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">1 mol CCl<sub>4</sub></span>
+<span class="Denominator">1 mol CS<sub>2</sub></span></span>)= 13.16 moles </div>
+
+<div class="frac"><div class="maineq"> moles of CCl<sub>4</sub> from Cl<sub>2</sub>= ( 2000 grams Cl<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole Cl<sub>2</sub></span>
+<span class="Denominator">70.9 grams Cl<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">1 mol CCl<sub>4</sub></span>
+<span class="Denominator">3 moles Cl<sub>2</sub></span></span>)= 9.40 moles </div>
+<p>From the calculation, it shows that Cl<sub>2</sub> is the limiting reactant and the mass of CCl<sub>4</sub> is:</p>
+<div class="frac"><div class="maineq"> grams of CCl<sub>4</sub>= ( 9.40 moles CCl<sub>4</sub>)</div>(<span class="Fraction"><span class="Numerator">153.8 grams CCl<sub>4</sub></span>
+<span class="Denominator">1 mole CCl<sub>4</sub></span></span>) (<span class="Fraction"><span class="Numerator">1 kg CCl<sub>4</sub></span>
+<span class="Denominator">1000 grams CCl<sub>4</sub></span></span>)= &nbsp <span style="color:blue"><strong>1.45 grams CCl<sub>4</sub></strong></span></div><br>
+</div><br>
+<li>What mass of FeCl<sub>3</sub> would contain the same total number of ions as of 16.8 grams of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>?
+(Topic: Avogadro's Number)</li>
+<!--Answer No. 6 !-->
+<div class="viewbutton"><button class="button_2" onclick="myAnswer6()"> View Solution and Answer</button></div><br>
+<div id="mySolution6" hidden>
+<p>To solve this type of problem, convert the grams of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> to ions by Avogadro's number and then use the value obtained
+to convert it into grams of FeCl<sub>3</sub>. The stoichiometry should be:</p>
+<div class="frac"><div class="maineq"> ions of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> = ( 16.8 grams Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub></span>
+<span class="Denominator">342 grams Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub></span></span>) (<span class="Fraction"><span class="Numerator">6.022 x 10<sup>23</sup> ions</span>
+<span class="Denominator">1 mole Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub></span></span>)= 2.958 x 10<sup>22</sup>&nbsp ions Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> </div>
+
+<p>Since ions of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> = ions of FeCl<sub>3</sub> in this problem, we solve:</p>
+<div class="frac"><div class="maineq"> grams of FeCl<sub>3</sub> = (  2.958 x 10<sup>22</sup> ions)</div>(<span class="Fraction"><span class="Numerator">1 mole FeCl<sub>3</sub></span>
+<span class="Denominator">6.022 x 10<sup>23</sup> ions)<sub>3</sub></span></span>) (<span class="Fraction"><span class="Numerator">162.2 FeCl<sub>3</sub></span>
+<span class="Denominator">1 mole FeCl<sub>3</sub></span></span>)= &nbsp <span style="color:blue"><strong>7.97 grams FeCl<sub>3</sub></strong></span></div>
+</div>
+
+<li>What is the empirical formula of a hydrocarbon if complete combustion of 3.700 mg of the hydrocarbon produced 12.507 mg of CO<sub>2</sub>
+and 2.560 mg of H<sub>2</sub>O? What is the molecular formula of the compound or hydrocarbon if its molar mass was found to be at 40 g/mol?
+(Topic: Combustion Analysis)</li>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer7()"> View Solution and Answer</button></div><br>
+<!--Answer No. 7!-->
+<div id="mySolution7" hidden>
+<p>Solving for the empirical formula requires the determination of the moles of carbon and oxygen element from carbon dioxide and water product respectively:</p>
+<div class="frac"><div class="maineq"> moles of C = ( 12.507 mg CO<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">1 gram CO<sub>2</sub></span>
+<span class="Denominator">1000 mg CO<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">1 mole CO<sub>2</sub></span>
+<span class="Denominator">44 grams CO<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">1 mole C</span>
+<span class="Denominator">1 mole CO<sub>2</sub></span></span>)= 2.84 x 10<sup>&#8722 4</sup> &nbsp moles of C </div>
+<div class="frac"><div class="maineq"> moles of H = ( 2.560 mg H<sub>2</sub>O)</div>(<span class="Fraction"><span class="Numerator">1 gram H<sub>2</sub>O</span>
+<span class="Denominator">1000 mg H<sub>2</sub>O</span></span>) (<span class="Fraction"><span class="Numerator">1 mole H<sub>2</sub>O</span>
+<span class="Denominator">18 grams H<sub>2</sub>O</span></span>) (<span class="Fraction"><span class="Numerator">2 moles H<sub>2</sub></span>
+<span class="Denominator">1 mole H<sub>2</sub>O</span></span>)= 2.84 x 10<sup>&#8722 4</sup> &nbsp moles of H<sub>2</sub></div>
+<p>Taking the ratio of C and H<sub>2</sub>:</p>
+<div class="frac"><span class="Fraction"><span class="Numerator">2.84 x 10<sup>&#8722 4</sup> &nbsp moles C</span>
+<span class="Denominator">2.84 x 10<sup>&#8722 4</sup> &nbsp moles of H<sub>2</span></span> &nbsp = &nbsp <span class="Fraction"><span class="Numerator">1 C</span>
+<span class="Denominator">1 H<sub>2</sub></span></span></div>
+<p>Thus, the mole ratio is 1:1 and the empircial formula is <span style="color:blue"><strong>CH</strong></span></p>
+<p>Next is solving for the molecular formula by getting the factor to multiply with the subscripts of empirical formula:</p>
+<div class="frac"><div class="maineq"> n =</div><span class="Fraction"><span class="Numerator">Molecular Mass (MM)</span>
+<span class="Denominator">Empirical Mass (EM)</span></span>= <span class="Fraction"><span class="Numerator">40 g/mol</span>
+<span class="Denominator">13 g/mol</span></span>= 3.07 &#8776 3</div><br>
+<p>Multiplying three to the subscripts of empirical formula CH, we have  <span style="color:blue"><strong>C<sub>3</sub>H<sub>3</sub></strong></span></p>
+<br>
+</div>
+	<br>
+<li>Salicylic acid (C<sub>7</sub>H<sub>6</sub>O<sub>3</sub>) reacts with acetic anhydride (C<sub>4</sub>H<sub>6</sub>O<sub>3</sub>) to form aspirin or acetylsalicylic acid
+(C<sub>9</sub>H<sub>8</sub>O<sub>4</sub>). If the percent yeild in this reaction is 78.5%,
+what is the mass of salicylic acid that is required to produce 150 grams of aspirin? (Topic: Reaction Stoichiometry and Percentage Yield)</li>
+<p class="equation">2C<sub>7</sub>H<sub>6</sub>O<sub>3</sub> + C<sub>4</sub>H<sub>6</sub>O<sub>3</sub> &#8594 2C<sub>9</sub>H<sub>8</sub>O<sub>4</sub> + H<sub>2</sub>O</p>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer8()"> View Solution and Answer</button></div><br>
+<!--Answer No. 8 !-->
+<div id="mySolution8" hidden>
+<p>To solve for the mass of salicylic acid, you need to obtain the theoretical yield of aspirin (C<sub>9</sub>H<sub>8</sub>O<sub>4</sub>):</p>
+<div class="frac"><div class="maineq"> % Yield = </div>(<span class="Fraction"><span class="Numerator">Actual Yield</span>
+<span class="Denominator">Theoretical Yield</span></span>) &nbsp x 100%</div>
+<div class="frac"><div class="maineq"> 78.5% = </div>(<span class="Fraction"><span class="Numerator">150 grams C<sub>9</sub>H<sub>8</sub>O<sub>4</sub></span>
+<span class="Denominator">Theoretical Yield</span></span>) &nbsp x 100%</div>
+<p class="equation">Theoretical Yield = &nbsp 191 grams C<sub>9</sub>H<sub>8</sub>O<sub>4</sub></p>
+<p>For the mass of salicylic acid:</p>
+<div class="frac"><div class="maineq"> grams of C<sub>7</sub>H<sub>6</sub>O<sub>3</sub> = (191 grams C<sub>9</sub>H<sub>8</sub>O<sub>4</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole C<sub>9</sub>H<sub>8</sub>O<sub>4</sub></span>
+<span class="Denominator">180 grams C<sub>9</sub>H<sub>8</sub>O<sub>4</sub></span></span>)(<span class="Fraction"><span class="Numerator">2 moles C<sub>7</sub>H<sub>6</sub>O<sub>3</sub></span>
+<span class="Denominator">2 moles C<sub>9</sub>H<sub>8</sub>O<sub>4</sub></span></span>)(<span class="Fraction"><span class="Numerator">138 grams C<sub>7</sub>H<sub>6</sub>O<sub>3</sub></span>
+<span class="Denominator">1 mole C<sub>7</sub>H<sub>6</sub>O<sub>3</sub></span></span>) = <span style="color:blue"><strong> 146 grams C<sub>7</sub>H<sub>6</sub>O<sub>3</sub></strong></span></div>
+</div>
+<li>Phosgene, COCl<sub>2</sub>, is a poisonous gas, decomposes according to the equation: COCl<sub>2(g)</sub> &#8652
+CO<sub>(g)</sub> + Cl<sub>2(g)</sub>. What is K<sub>p</sub> for the reaction if K<sub>c</sub> = 0.083 at 900°C? (Topic: Chemical Equilibria)</li>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer9()"> View Solution and Answer</button></div>
+<!--Answer No. 9 !-->
+<div id="mySolution9" hidden>
+<p>Following the formula of converting K<sub>p</sub> to K<sub>c</sub>:</p>
+<p class="equation">K<sub>p</sub>=K<sub>c</sub>(RT)<sup>&#916n</sup></p>
+<p class="equation">K<sub>p</sub>=(0.083)[(0.0821 L &middot atm/ mol &middot K)(1173.15 K)]<sup>2 &#8722 1</sup></p>
+<p class="equation">K<sub>p</sub>= &nbsp <span style="color:blue"><strong>7.99</strong></span></p>
+</div><br>
+<li>What is the [OCl<sup>&#8722</sup>] in 0.10 M hypochlorous acid, HOCl? K<sub>A</sub> for hypochlorous acid = 3.5 x 10<sup>&#8722 8</sup>. (Topic: Acid-Base Equilibria)</sup></li>
+<div class="viewbutton"><button class="button_2" onclick="myAnswer10()"> View Solution and Answer</button></div>
+<div id="mySolution10" hidden>
+<p>To solve for [OCl<sup>&#8722</sup>], determine the equilibrium expression of dissociation of HOCl by ICE table:</p>
+<table class="balance">
+	<tr>
+	<th>Chemical Equation:</th>
+	<th>HOCl</th>
+	<th>&#8652 &nbsp &nbsp H<sup>+</sup> </th>
+	<th> + &nbsp OCl<sup>&#8722</sup></th>
+	</tr>
+<tr>
+    <td><strong>I</strong></td>
+    <td>0.10 M</td>
+    <td style="text-align:center">0</td>
+	<td>0</td>
+  </tr>
+  <tr>
+    <td><strong>C</strong></td>
+    <td>-x</td>
+    <td style="text-align:center">+x</td>
+	<td>+x</td>
+  </tr>
+
+    </tr>
+  <tr>
+    <td><strong>E</strong></td>
+    <td>0.10 &#8722 x</td>
+    <td style="text-align:center">+ &nbsp x</td>
+	<td>+ &nbsp x</td>
+  </tr>
+	</table><br>
+<p>The equilibrium expression is:</p>
+<div class="frac"><div class="maineq">K = </div><span class="Fraction"><span class="Numerator">[H<sup>+</sup>][OCl<sup>&#8722</sup>]</span>
+<span class="Denominator">[HOCl]</span></span>=<span class="Fraction"><span class="Numerator">(x)(x)</span>
+<span class="Denominator">(0.10 &#8722 x)</span></span></div>
+<div class="frac"><div class="maineq">3.5 x 10<sup>&#8722 8</sup> = </div><span class="Fraction"><span class="Numerator">x<sup>2</sup></span>
+<span class="Denominator">(0.10 &#8722 x)</span></span></div><br>
+<p>There is a technique for solving the value of x easily in chemical equilibrium, if the condition is:</p>
+<div class="frac"><div class="maineq">if</div><span class="Fraction"><span class="Numerator">[initial]</span>
+<span class="Denominator">K</span></span> &gt 100, then +x or &#8722x can be neglected from the expression, else perform quadratic equation to
+solve for x. </div>
+<p>This condition states that if the ratio of inital concentration to the equilibrium constant is greater than 100, then you can neglect the terms + x or
+&#8722x in the equilibrium expression so that it can be easier to solve for x. If it is otherwise, perform the usual algebraic operation to solve for x.
+In this example, the expression is simplified:</p>
+<div class="frac"><span class="Fraction"><span class="Numerator">0.10</span>
+<span class="Denominator">3.5 x 10<sup>&#8722 8</sup></span></span> &gt 100, therefore &#8722x is negligible to solve for x</div><br>
+
+<div class="frac"><div class="maineq">3.5 x 10<sup>&#8722 8</sup> = </div><span class="Fraction"><span class="Numerator">x<sup>2</sup></span>
+<span class="Denominator">(0.10)</span></span></div><br>
+
+<p class="equation">x &nbsp = &nbsp &#8730(3.5 x 10<sup>&#8722 8</sup>)(0.10) = 5.92 x 10<sup>&#8722 5</sup></p>
+<p>Thus, [OCl<sup>&#8722</sup>] =<span style="color:blue"><strong>5.92 x 10<sup>&#8722 5</sup> M</strong></span></p>
+</div><br>
+</ol>
+
+
+</section>
+
+
+<div class="bottom">
+	<footer>
+		<div class="equation">Bryan's SciTutor Copyright &copy; 2020 All Rights Reserved.</div>
+		</footer>
+</div>
+
+ </div>
+</section>
+
+	</body>
+</html>

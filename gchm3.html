@@ -1,0 +1,456 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A student-friendly science tutorial">
+	<meta name="keywords"   content="online course, science, biology,chemistry">
+	<meta name="author" content="Bryan Castillo">
+	<title>General Chemistry</title>
+	<link rel="stylesheet" href="./css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width = '230px';
+		document.getElementById('gridcontainer').style.marginLeft = '230px';
+	}
+
+	function closeSlideMenu(){
+		document.getElementById('side-menu').style.width = '0';
+		document.getElementById('gridcontainer').style.marginLeft = '0';
+	}
+	</script>
+		<script type="text/javascript" src="./script/myfunctions.js"></script>
+	</head>
+	<body>
+	<header>
+	<div class="container">
+		<span class="open-slide">
+	<a href="#" onclick="openSlideMenu()">
+		<svg width="30" height="30">
+				<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+				<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+		</svg>
+	</a>
+	</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<div class="lec">
+			<h3>Outline of the Course</h3>
+<ul>
+	<li><a href="#acidbase">Acids and Bases</a></li>
+	<li><a href="#phscale">The pH Scale</a></li>
+	<li><a href="#equilibria">Introduction to Chemical Equilibrium</a></li>
+	<li><a href="#Keq">Forms of K in Equilibrium</a></li>
+	<li><a href="#calculate">Calculations in Chemical Equilibrium</a></li>
+	<li><a href="#chmstress">Chemical Stresses</a></li>
+<li class="targethover"><a href="#">More Topics<i class="fa fa-angle-right"></i></a>
+	<div class="submenu-1"><ul>
+			<li class="targethover-2"><a href="gchm1.html">Page 1</a></li>
+			<li  class="targethover-3"><a href="gchm2.html">Page 2</a></li>
+			<li  class="targethover-4"><a href="gchm4.html">Page 4</a></li>
+	</ul></div>
+</li>
+<li class="hoverexam"><a href="#">Practice Exams<i class="fa fa-angle-right"></i></a>
+<div class="submenu-x"><ul>
+	<li><a href="gchm5.html">Problem Solving</a></li>
+	<li><a href="gchmexam.html">Multiple Choice</a></li>
+</div></ul>
+</li>
+</ul></div>
+	</div>
+		<div id="branding"><h1><span class="highlight">Bryan's</span> SciTutor</h1></div>
+	<nav>
+		<ul>
+		<li><a href="index.html">Home</a><i class="fa fa-home"></i></li>
+		<li><a href="about.html">About Us</a><i class="fa fa-user"></i></li>
+		<li class="current"><a href="courses.html">Courses<i class="fa fa-clone"></i></a></li>
+		</ul>
+	</nav>
+	</div>
+	</header>
+<div id="gridcontainer">
+
+<div id="content1">
+	<h3><a name="acidbase">Acids and Bases</a></h3>
+	<p>A special type of chemical reaction occurs whenever there are pairs of acids and base. They are known to be
+	classification of chemicals or substances through the pH scale. Acids and bases can be defined with three
+	different theories which are the Arrhenius theory, Bronsted-Lowry theory, and Lewis theory. They have different definitions on an acid and a base
+	but they still reflect the same chemical reaction occured and the reacting species of the acids and bases. To further understand an acid and a base, here is a hypothetical
+	reaction between an acid and base with its parts:</p>
+	<div class="equation"><span style="color:red">HX</span> + <span style="color:blue">H<sub>2</sub>O </span> &#8652
+		<span style="color:purple">H<sub>3</sub>O<sup>+</sup></span> + <span style="color:green">X<sup>-</sup></span></div>
+		<p>In this representation: <span style="color:red">HX is the acid</span>, <span style="color:blue">H<sub>2</sub>O is the base</span>, <span style="color:purple">H<sub>3</sub>O<sup>+</sup> is the conjugate acid</span>,
+and <span style="color:green">X<sup>-</sup> is the conjugate base</span>. In addition, a proton of the acid can either be represnted by H<sup>+</sup> or H<sub>3</sub>O<sup>+</sup>.</p>
+<p>Acids and bases were also categorized depending on strengths on how acidic or how basic they could be. This can be identified through the scale called <strong>pH</strong>. However,
+there are times the value of pH is not given. There is still a way to determine the strength of acids and bases. They can be described as follows:</p>
+<ul>
+ <li><strong>Strong Acid</strong>- all acid halides are considered to be strong acids except for HF (due to the hydrogen bonding). These includes
+ HCl, HBr, and HI. Other strong acids include nitric acid(HNO<sub>3</sub>), sulfuric acid (H<sub>2</sub>SO<sub>4</sub>),
+ and perchloric acid (HClO<sub>4</sub>).</li></ul>
+</div>
+<div id="content2">
+	<table class="balance">
+		<tr>
+		<th>Theories</th>
+		<th>Definition of Acids</th>
+		<th>Definition of Bases</sub></th>
+		<th>Example of Acid-Base Pairs </th>
+
+		</tr>
+
+	<tr>
+	    <td>Ahrrenius Theory</td>
+	    <td>contains H<sup>+</sup></td>
+	    <td>contains OH<sup>-</sup></td>
+		<td>HCl (acid) and NaOH (base)</td>
+
+	  </tr>
+	  <tr>
+	    <td>Bronsted-Lowry Theory</td>
+	    <td>Proton Donor</td>
+	    <td>Proton Acceptor</td>
+		<td>H<sub>2</sub>O (acid) and NH<sub>3</sub> (base)</td>
+	  </tr>
+
+	    </tr>
+	  <tr>
+	    <td>Lewis Theory</td>
+	    <td>Electron Pair Acceptor</td>
+	    <td>Electron Pair Donor</td>
+		<td>BF<sub>3</sub> (acid) and NH<sub>3</sub> (base)</td>
+	  </tr>
+		</table>
+</div>
+<section id="main">
+<ul>
+	<li><strong>Weak Acid</strong>- almost organic acids are considered to be weak acids such as acetic acid (CH<sub>3</sub>COOH) and formic acid (CHCOOH). Other weak acids
+	  are phosphoric acid (H<sub>3</sub>PO<sub>4</sub>) and hydrogen sulfide (H<sub>2</sub>S)</li>
+	  <li><strong>Strong Bases</strong>-almost strong bases are those who has hydroxides (OH<sup>-</sup>) as their component. Some strong bases include sodium
+	  hydroxide (NaOH), potassium hydroxide (KOH), and calcium hydroxide Ca(OH)<sub>2</sub></li>
+	  <li><strong>Weak Bases</strong>-almost organic bases like pyridine (C<sub>5</sub>H<sub>5</sub>N) and trimethylamine (CH<sub>3</sub>)<sub>3</sub>N and
+	  also ionic bases such as HS<sup>-</sup> and HCOO<sup>-</sup>. Another weak base is ammonia (NH<sub>3</sub>)</li>
+	  </ul>
+
+		<h3><a name="phscale">The pH Scale</a></h3>
+		  <p>Whenever discussing about acids and bases, the parameter pH measures the acidity or alkalinity (basicity) of a substance. The pH scale has a value ranging from 0 to 14 wherein 7
+		  is the midpoint that represents the neutral condition. If pH approaches the ranges below 7, the substance is acidic while if the pH is from 7 above up to 14, the substance is basic.
+		  pH can be represented mathematically as the negative logarithm of H<sup>+</sup> ions (p-function of H<sup>+</sup> ions):</p>
+		  <div class="equation">pH = &#8722log[H<sup>+</sup>] &nbsp or &nbsp [H<sup>+</sup>] = 10<sup>&#8722pH</sup></div>
+		  <div class="centerme"><img src="./imggchm/pH.jpg" width="700" height="120"/></div>
+		  <p>Water(H<sub>2</sub>O) is a special molecule with regards to pH because it has the property of being <strong>ampotheric</strong>. This property is defined
+		  as water could either act as an acid or base with its interaction with other molecules. Ampotherism is greatly depends on the oxidation states of the oxides
+		  available in a molecule. Another thing is that, pH is a very important factor for determining quality of the water. Theoretically, water at absolute condition has a pH of 7 (neutral condition). However, pH changes relatively
+		  due to the chemical constituents involved or its temperature. Usually, at lower temperature,
+		  the pH rises up (pH &gt 7) approaching basic condition while at higher temperature, pH of water becomes acidic (pH &lt 7). As stated there are also
+		  chemical constituents that makes water changes its pH. In depth discussion on acid-base reactions are further discussed on
+		  <a href="anachm1.html">analytical chemistry section</a>.</p>
+			<p>Another notation that can be expressed in acid-base reactions is the pOH scale. This scale is the p-function of hydroxide (OH<sup>-</sup>) ions
+which is also related to the pH scale. It is similar to pH but this time it focuses on the hydroxide concentration:</p>
+<div class="equation">pOH &nbsp = &nbsp &#8722log[OH<sup>&#8722</sup>] &nbsp or &nbsp  [OH<sup>&#8722</sup>] = 10<sup>&#8722pOH</sup></div>
+<p>The relationship between pH and pOH at room temperature is:</p>
+<div class="equation">pH &nbsp + &nbsp pOH &nbsp = &nbsp <strong>14</strong></div>
+<h3><a name="equilibria">Introduction to Chemical Equilibrium</a></h3>
+<p>In some chemical reactions, there is a state by which both the reactants and products have no further susceptibility to changes as each of the
+concentrations of reactants and products remain constant at any time. This concept of balanced forward and reverse reaction is called <strong>chemical equilibrium</strong>.
+ A chemical reaction at equilibrium state has always arrow representation of &#8652 which indicates the reaction could either proceed in a forward or reverse direction
+ in order to conserve the equal concentrations of reactants and products. Chemical equlibrium is further supported by <strong>Le Chatelier's Principle</strong> by which
+it states that if an external stress is applied to a system at equilibrium, the system adjusts in such a way that the stress is partially offset as it tries to re-establish equilibrium..
+Consider the hypothetical reaction:</p>
+<div class="equation">A + 2B &#8652 AB<sub>2</sub></div>
+<p>To correlate the concentrations of each reactants and product, the term <strong>equilibrium constant</strong> (K<sub>c</sub>)is expressed. The expression K<sub>c</sub>
+is always represented by the ratio of the concentrations at reverse rate over the concentrations at forward rate of the reaction. It is illustrated as (based from the given hypothetical reaction):</p>
+<div class="frac"><div class="maineq">K<sub>c</sub> = </div><span class="Fraction"><span class="Numerator">[AB<sub>2</sub>]</span>
+<span class="Denominator">[A][B]<sup>2</sup></span></span></div>
+
+<p> The numerator represents the product while the denominator represents the reactants. It also shows that coefficients involved in the chemical reaction
+affects the concentration of the specific component with coefficient exponentially. Concentration should be raised to 2 as expressed. Equilibrium expressions
+is also dependent to which phases are involved in the chemical reaction. There are two general classifications of chemical equilibrium which are homogenous equilibrium and heterogeneous equilibrium. <strong>Homogeneous equilibrium</strong> applies to reactions in which all
+reacting species are in the same phase. Meanwhile, <strong>heterogeneous equilibrium</strong> is for reactions involving reactants and products at different phases. To be familiarized
+with equilibrium expressions, there are general rules in writing the proper equilibrium constant expressions.</p>
+
+</section>
+
+<div id="content3">
+	<h4>Writing Equilibrium Constant Expressions</h4>
+		<ol>
+		<li>The concentrations of the reacting species in a chemical equilibrium can be expressed as:</li>
+		<ul><li class="indent">For condensed phase: moles per Liter (M) </li><li class="indent">For gaseous phase: moles per Liter (M) or by pressure (usually in atm or mmHg	)</li></ul>
+		<li>Pure solids and liquids (heterogeneous equilibria) and solvents (homogeneous equilibria) do not appear in the equilibrium constant expression</li>Example:<br>
+		<div class="equation">CaCO<sub>3(s)</sub> &#8652 CaO<sub>3(s)</sub> + CO<sub>2(g)</sub></div>
+		<p>The partial equilibrium expression is:</p>
+		<p class="equation"><div class="frac"><div class="maineq">K'<sub>c</sub> = </div><span class="Fraction"><span class="Numerator">[CaO][CO<sub>2</sub>]</span>
+	<span class="Denominator">[CaCO<sub>3</sub>]</span></span>which should be simplified to:</div></p>
+		<div class="equation"><strong>K<sub>c</sub>= [CO<sub>2</sub>]</strong></div>
+		<li class="example">Equilibrium constant (K<sub>p</sub> or K<sub>c</sub>) is dimensionless</li>
+		<li class="example">Specify the balanced chemical equation and the temperature in quoting a value for the equilibrium constant. The value of equilibrium constant of a reaction
+		changes with respect to temperature that is why it is important to add temperature on the details.</li><br>
+		</ol>
+
+</div>
+<div id="content4">
+	<div class="centerme"><img src="./imggchm/seesaw.jpeg" width="300" /></div>
+	<div class="caption">Le Chatelier's principle is analogous to the mechanism of a seesaw. Whenever there is an applied weight (representing the chemical stress) to it,
+	the balance gets interrupted. Adjustments must be done to maintain balance (condition of chemical equilibrium) and through that principle, certain steps are to be
+	applied in order to bring back its balance.</div>
+</div>
+<div id="pageop">
+	<h3><a name="Keq">The Form of K in Chemical Equilibrium</a></h3>
+	<p>For gaseous phase reactions, the form of K is proportional to the pressures exerted by the reacting species. It is represented by K<sub>p</sub> by which you can correlate it to the
+	equilibrium constant in terms of molar concentration, K<sub>c</sub>. It is mathematically represented as shown below where R is the gas constant (0.0821 L &middot atm/mol &middot K)
+	, T is the absolute temperature (units in K), and &#916n which is the change in moles (moles of products minus moles of reactants of condensed and gaseous phases only): </p>
+	<div class="equation">K<sub>p</sub>=K<sub>c</sub>(RT)<sup>&#916n</sup></div>
+
+	<p>Another scenario for the equilibrium constant if the whole sequence of chemical equation is change (either the reactants and products were swapped or balancing
+	the chemical equation with different sequence of coefficients). Each of these has guidelines to follow:</p>
+	<ul>
+	<li><strong>Case 1</strong>: When the equation for a reversible reaction is written in the opposite direction, the K<sub>c</sub> becomes the
+	<strong>reciprocal</strong> of the original equilibrium constant</li>
+<p>Example:</p>
+<div class="equation">N<sub>2</sub>O<sub>4(g)</sub> &#8652 2NO<sub>2(g)</sub> at 25°C, K<sub>c</sub>= 4.63 x 10<sup>-3</sup></div>
+
+	<p class="equation"><div class="frac"><div class="maineq">K<sub>c</sub> = </div><span class="Fraction"><span class="Numerator">[NO<sub>2</sub>]<sup>2</sup></span>
+	<span class="Denominator">[N<sub>2</sub>O<sub>4</sub>]</span></span>=  4.63 x 10<sup>-3</sup></div></p>
+	<p>When the chemical reaction is reversed,</p>
+	<div class="equation">2NO<sub>2(g)</sub> &#8652 N<sub>2</sub>O<sub>4(g)</sub> at 25°C, K'<sub>c</sub></div>
+	<p class="equation"><div class="frac"><div class="maineq">K'<sub>c</sub> = </div><span class="Fraction"><span class="Numerator">1</span>
+	<span class="Denominator">4.63 x 10<sup>-3</sup></span></span>= <strong>216</strong></div></p>
+	<li><strong>Case 2</strong>:The value of K also depends on how the equilibrium equation is <strong>balanced</strong>.</li>
+	<p>Example:</p>
+	<div class="equation">N<sub>2</sub>O<sub>4(g)</sub> &#8652 2NO<sub>2(g)</sub> at 25°C, K<sub>c</sub>= 4.63 x 10<sup>-3</sup></div>
+	<p>When the coefficient is changed,</p>
+	<p class="equation"><div class="frac"><span class="Fraction"><span class="Numerator">1</span>
+	<span class="Denominator">2</span></span>N<sub>2</sub>O<sub>4</sub> &#8652 NO<sub>2</sub> &nbsp at 25°C, K'<sub>c</sub></div></p>
+	<div class="equation">K'<sub>c</sub>= &#8730 (K<sub>c</sub>)= &#8730 (4.63 x 10<sup>-3</sup>)= <strong>0.0680</strong></div>
+
+	<p>Another quantity that can be obtained from chemical equilibrium is the <strong>reaction quotient (Q<sub>c</sub>)</strong>. It is obtained by substituting
+the initial concentrations into the equilibrium constant expression instead of the original equilibrium concentrations. This value is an effective determinant
+to predict which side of the reaction is favorable through their comparison with the equilibrium constants.</p>
+<table class="balance">
+<tr>
+<th>Cases</th><th style="text-align:center">Prediction</th><th style="text-align:center">Condition</th>
+</tr>
+<tr>
+<td>Q<sub>c</sub> &lt K<sub>c</sub></td>
+<td style="text-align:center">Forward Reaction</td>
+<td><ul><li>Initial concentrations are too small</li><li>Consuming reactants to form products</li></ul></td>
+</tr>
+<tr>
+<td>Q<sub>c</sub> &gt K<sub>c</sub></td>
+<td style="text-align:center">Reverse Reaction</td>
+<td><ul><li>Initial concentrations are too large</li><li>Consuming products to form reactants</li></ul></td>
+</tr>
+<td>Q<sub>c</sub> = K<sub>c</sub></td>
+<td style="text-align:center">No Favorable Side of the Reaction</td>
+<td><ul><li>The system is at equilibrium</li></ul></td>
+</table>
+<h3><a name="calculate">Calculations Involved in Chemical Equilibrium</a></h3>
+<p>There are cases that chemical equilibrium were interfered by a chemical stress, it results to the concentration of the reacting species to change. A known way to identify the equilibrium concentrations
+and analyze the chemical equilibrium to such stress is through the ICE table method. It is a modified and convenient method based on the principle of chemical equilibrium of charge and mass balance (on analytical chemistry)
+by which equilibrium expressions were derived. In the ICE table, I stands for initial concentration, C stands for the change in the concentration (the chemical stress), and E stands for
+equilibrium concentration. To use this table, you will construct a table where the initials of ICE as the rows while each of the reacting species as the columns of the table.
+Calculations with this techique is also applicable to acid-base equilibria. Consider again the hypothetical reaction for the equilibrium:</p>
+<div class="equation">A + 2B &#8652 AB<sub>2</sub></div>
+<table class="icetable">
+	<tr>
+	<th style="text-align:center;">Chemical Equation:</th>
+	<th>A  +</th>
+	<th>2B &#8652</th>
+	<th> AB<sub>2</sub></th>
+
+	</tr>
+
+<tr>
+    <td style="text-align:center;"><strong>I</strong></td>
+    <td>A</td>
+    <td>B</td>
+	<td>AB<sub>2</sub></td>
+
+  </tr>
+  <tr>
+    <td style="text-align:center;"><strong>C</strong></td>
+    <td>-x</td>
+    <td>-2x</td>
+	<td>+x</td>
+  </tr>
+
+    </tr>
+  <tr>
+    <td style="text-align:center;"><strong>E</strong></td>
+    <td>A-x</td>
+    <td>B-2x</td>
+	<td>AB<sub>2</sub>+ x</td>
+  </tr>
+	</table>
+	<p>Analyzing the table, you can observe that the row I shows the initial concentration which is the reacting species as is. On the other hand, through the change x
+(represented by row C), chemical stress was applied in terms of concentration change. The change greatly depends on the coefficient of the reacting species. Additionally,
+the portion on the reactants relatively show a negative sign which means it is being consumed while the product side is positive showing it is being generated throughout the change.
+Adding the components of each columns on rows I and C results to the formulation of the expressions in row E. Row E represents the equilibrium concentration, thus the resulting equilibrium expression is:</p>
+<div class="frac"><div class="maineq">K<sub>c</sub> = </div><span class="Fraction"><span class="Numerator">[AB<sub>2</sub>+x]</span>
+<span class="Denominator">[A-x][B-2x]</span></span></div>
+
+<h4>Sample Problem on Chemical Equilibrium</h4>
+<p>Calcium carbonate decomposes at high temperatures to give calcium oxide and carbon dioxide.</p>
+<div class="equation">CaCO<sub>3(s)</sub> &#8652 CaO<sub>(s)</sub> + CO<sub>2(g)</sub></div>
+<p>K<sub>p</sub> for this reaction is 1.16 at 800°C. A 5.00 L vessel containing 10 grams of CaCO<sub>3(s)</sub> was evacuated to remove the
+air sealed, and then heated to 800°C. Ignoring the volume occupied by the solid, what will be the mass of the solids in the vessel once equilibrium
+is reached?</p>
+
+<div class="viewbutton"><button class="button_2" onclick="showmyAnswer()"> View Solution and Answer</button></div>
+
+	<div class="solanswers" id="mySolution" hidden>
+		<p>Listing down the given:</p>
+		<ul>
+		<li>mass<sub>CaCO<sub>3</sub></sub>= 10 grams</li>
+		<li>T= 800°C + 273.15 K = 1073.15 K</li>
+		<li>&#916n = 1 - 0= 1</li>
+		</ul>
+		<p>To solve for the masses of the solids (the sum of the masses of CaCO<sub>3</sub> and mass of CaO), you need to identify first the moles of
+		each of the solids and then convert it to grams by their molecular weights(stoichiometry). However, the given are K<sub>p</sub> which represents carbon
+		dioxide only and the initial mass of CaCO<sub>3</sub>. With this given, convert K<sub>p</sub> to K<sub>c</sub> using the equation for their conversion and
+		obtain the initial concentration of CaCO<sub>3</sub> by stoichiometry.</p>
+		<br><p>Converting K<sub>p</sub> to K<sub>c</sub>:</p>
+
+		<div class="equation">K<sub>p</sub>=K<sub>c</sub>(RT)<sup>&#916n</sup></div>
+		<div class="frac"><div class="maineq">K<sub>c</sub> = </div><span class="Fraction"><span class="Numerator">K<sub>p</sub></span>
+	<span class="Denominator">(RT)<sup>&#916n</sup></span></span>=<span class="Fraction"><span class="Numerator">1.16</span>
+	<span class="Denominator">[(0.0821 L&middotatm/mol&middotK)(1073.15 K)]<sup>1</sup></span></span>=<em>0.01317</em></div>
+	<p>Finding the initial concentration of CaCO<sub>3</sub>:</p>
+		<div class="frac"><div class="maineq">moles<sub>CaCO<sub>3</sub></sub>= (10 g CaCO<sub>3</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mol CaCO<sub>3</sub></span>
+		<span class="Denominator">100 g CaCO<sub>3</sub></span></span>)=0.1 mol CaCO<sub>3</sub></div>
+		<p>To further visualize the problem, use ICE table method in the assessment of the chemical equilibrium</p>
+
+		<div class="frac"><div class="maineq">M<sub>CaCO<sub>3</sub></sub>= </div><span class="Fraction"><span class="Numerator">0.1 mol CaCO<sub>3</sub></span>
+		<span class="Denominator">5 L</span></span>=<em>0.02 M</em></div><br>
+		<div>
+		<table class="icetable">
+		<tr>
+		<th style="text-align:center;">Chemical Equation:</th>
+		<th>CaCO<sub>3(s)</sub> &#8652 </th>
+		<th>CaO<sub>(s)</sub> +</th>
+		<th> CO<sub>2(g)</sub></th>
+		</tr>
+	<tr>
+	    <td style="text-align:center;"><strong>I</strong></td>
+	    <td>M<sub>CaCO<sub>3</sub></sub></td>
+	    <td>0</td>
+		<td>0</td>
+
+	  </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>C</strong></td>
+	    <td>-x</td>
+	    <td>+x</td>
+		<td>+x</td>
+	  </tr>
+
+	    </tr>
+	  <tr>
+	    <td style="text-align:center;"><strong>E</strong></td>
+	    <td>M<sub>CaCO<sub>3</sub></sub>-x</td>
+	    <td>x</td>
+		<td>x</td>
+	  </tr>
+		</table></div>
+
+		<div>
+		<p>The equilibrium expression is: K<sub>c</sub>= [CO<sub>2</sub>]= x = <em>0.01317</em></p>
+		<p>The result of the chemical equilibrium can formulate as the equations for the cocentrations of CaCO<sub>3</sub>
+		and CaO. It shows:</p>
+		<div class="equation">[CaCO<sub>3</sub>]= M<sub>CaCO<sub>3</sub></sub>&nbsp &#8722 x = &nbsp 0.02 M - 0.01317 &nbsp = &nbsp 6.83 x 10<sup>-3</sup> M</div>
+		<div class="equation">[CaO] &nbsp = &nbsp x &nbsp = 0.0137 M</div>
+		<p>Now, getting the moles of both CaCO<sub>3</sub> and CaO by the  given volume:</p>
+		<p>
+		<div class="frac"><div class="maineq">moles<sub>CaCO<sub>3</sub></sub>= </div>(<span class="Fraction"><span class="Numerator">6.83 x 10<sup>-3</sup> moles CaCO<sub>3</sub></span>
+		<span class="Denominator">L</span></span>)(5 L) &nbsp = 0.03415 mol CaCO<sub>3</sub></div>
+		<div class="frac"><div class="maineq">moles<sub>CaO</sub>=</div>(<span class="Fraction"><span class="Numerator">6.83 x 10<sup>-3</sup> moles CaO</span>)
+		<span class="Denominator">L</span></span>)(5 L) &nbsp = 0.06585 mol CaO</div></p>
+		</div>
+		<p>The last step is identifying the masses of each solid and then take their sum:</p>
+    <div class="frac"><div class="maineq">mass<sub>CaCO<sub>3</sub></sub>= (0.03415 mol CaCO<sub>3</sub>)</div>(<span class="Fraction"><span class="Numerator">100 g CaCO<sub>3</sub></span>
+	<span class="Denominator">1 mol CaCO<sub>3</sub></span></span>)= &nbsp 3.415 g CaCO<sub>3</sub></div>
+
+	<div class="frac"><div class="maineq">mass<sub>CaO</sub>= (0.06585 mol CaO)</div>(<span class="Fraction"><span class="Numerator">56 g CaO</span>
+	<span class="Denominator">1 mol CaO</span></span>)= &nbsp 3.688 g CaO</div>
+	<p>Adding the mass of CaCO<sub>3</sub> and CaO:</p>
+	<p class="equation">Total mass of solids= 3.415 g CaCO<sub>3</sub> + 3.688 g CaO = <strong>7.1 grams solids</strong></p>
+	</div>
+	<h3><a name="chmstress">Chemical Stresses</a></h3>
+	 <p>Chemical stresses are the changes in the condition of the chemical equilibrium that results to interruption on the equilibrium and thus favoring one side of the reaction.
+	 Prediction of which side would be favorable after applying chemical stress is possible through Le Chatelier's principle. Here are the conditions that can be applied
+	 to a chemical equilibrium:</p>
+	<li>Change in the Concentration of the Reacting Species</li>
+	<table class="chmstress">
+	<tr>
+	<th>Prediction</th>
+	<th>Conditions</th>
+	</tr>
+
+	<tr>
+	<td>Forward Reaction</td>
+	<td><li>Increase in the concentration of the reactants</li><li>Decrease in the concentration of the products</li></td>
+	</tr>
+
+	<tr>
+	<td>Reverse Reaction</td>
+	<td><li>Increase in the concentration of the products</li><li>Decrease in the concentration of the reactants</li></td>
+	</tr>
+	</table><br>
+	<li>Change in Pressure and Volume</li>
+	<p>This criteria is only applicable for reactions at gaseous phase. The greater the pressure, the smaller its volume which means that both
+	pressure and volume are inversely proportional (based on Boyle's law).</p>
+	<table class="chmstress">
+	<tr>
+	<th>Prediction</th>
+	<th>Conditions</th>
+	</tr>
+
+	<tr>
+	<td>Forward Reaction</td>
+	<td><li>Decrease in the pressure of the system</li><li>Increase in the number of moles of the gases (increased volume)</li></td>
+	</tr>
+
+	<tr>
+	<td>Reverse Reaction</td>
+	<td><li>Increase in the pressure of the system</li><li>Decrease in the number of moles of the gases (decreased volume)</li></td>
+	</tr>
+	</table><br>
+	<li>Change in Temperature</li>
+	<p>This is the only factor that can changes the numerical value of the equilibrium constant. A temperature increase favors an endothermic reaction(&#916H=<strong>+</strong>)
+	while a temperature decrease favors an exothermic reaction(&#916H=<strong>&#8722</strong>).</p>
+	<table class="chmstress">
+	<tr>
+	<th>Prediction</th>
+	<th>Conditions</th>
+	</tr>
+
+	<tr>
+	<td>Forward Reaction</td>
+	<td><li>Endothermic Reaction</li>
+	<p>Example: N<sub>2</sub>O<sub>4</sub> + heat &#8594 2NO<sub>2</sub> &nbsp &#916H=+ kJ/mol</p>
+	</td>
+	</tr>
+
+	<tr>
+	<td>Reverse Reaction</td>
+	<td><li>Exothermic Reaction</li>
+	<p>Example: N<sub>2</sub>O<sub>4</sub> &#8592 2NO<sub>2</sub> + heat &nbsp &#916H=&#8722 kJ/mol</p>
+	</td>
+	</tr>
+	</table><br>
+
+
+	<div class="btn-group">
+	<form action="gchm2.html"><button class="button">Previous Page</button></form>
+	<form action="gchm4.html"><button class="button">Next Page</button></form>
+</div><br>
+	<footer>
+		<div class="equation">Bryan's SciTutor Copyright &copy; 2020 All Rights Reserved.</div>
+		</footer>
+</div>
+
+ </div>
+</section>
+
+	</body>
+</html>

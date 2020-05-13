@@ -1,0 +1,529 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A student-friendly science tutorial">
+	<meta name="keywords"   content="online course, science, biology,chemistry">
+	<meta name="author" content="Bryan Castillo">
+	<title>General Chemistry</title>
+	<link rel="stylesheet" href="./css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width = '230px';
+		document.getElementById('gridcontainer').style.marginLeft = '230px';
+	}
+
+	function closeSlideMenu(){
+		document.getElementById('side-menu').style.width = '0';
+		document.getElementById('gridcontainer').style.marginLeft = '0';
+	}
+	</script>
+
+	<script type="text/javascript" src="./script/myfunctions.js"></script>
+	</head>
+	<body>
+	<header>
+	<div class="container">
+		<span class="open-slide">
+	<a href="#" onclick="openSlideMenu()">
+		<svg width="30" height="30">
+				<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+				<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+		</svg>
+	</a>
+	</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<div class="lec"><h3>Outline of the Course</h3>
+<ul>
+					<li><a href="#bonds">Chemical Bonding</a></li>
+					<li><a href="#chemeq">Chemical Equations</a></li>
+					<li><a href="#typechm">Types of Chemical Reactions</a></li>
+					<li><a href="#stoich">Mass and Moles Relationships</a></li>
+					<li><a href="#limits">Limiting Reactants and Percentage Yields</a></li>
+					<li><a href="#combust">Elemental and Combustion Analysis</a></li>
+<li class="targethover"><a href="#">More Topics<i class="fa fa-angle-right"></i></a>
+	<div class="submenu-1"><ul>
+			<li class="targethover-2"><a href="gchm1.html">Page 1</a></li>
+			<li  class="targethover-3"><a href="gchm3.html">Page 3</a></li>
+			<li  class="targethover-4"><a href="gchm4.html">Page 4</a></li>
+	</ul></div>
+</li>
+<li class="hoverexam"><a href="#">Practice Exams<i class="fa fa-angle-right"></i></a>
+<div class="submenu-x"><ul>
+	<li><a href="gchm5.html">Problem Solving</a></li>
+	<li><a href="gchmexam.html">Multiple Choice</a></li>
+</div></ul>
+</li>
+</ul></div>
+	</div>
+
+
+		<div id="branding"><h1><span class="highlight">Bryan's</span> SciTutor</h1></div>
+	<nav>
+		<ul>
+
+		<li><a href="index.html">Home</a><i class="fa fa-home"></i></li>
+		<li><a href="about.html">About Us</a><i class="fa fa-user"></i></li>
+		<li class="current"><a href="courses.html">Courses<i class="fa fa-clone"></i></a></li>
+		</ul>
+	</nav>
+	</div>
+	</header>
+<div id="gridcontainer">
+
+<div id="content1">
+	<h3><a name="#bonds">Chemical Bonding</a></h3>
+	<p>Common molecules are named based on the bonding involved in them. Generally, the two types of chemical bonding
+	 are ionic bonding and covalent bonding. <strong>Ionic Bonding</strong> is the bonding where electrons are transferred
+ from one molecule to another. Due to that transferring, the elemental form of an atom turns into ionic form. Ions are classified
+by the terms <strong>cation</strong>(positively charged ion) and <strong>anion</strong>(negatively charged ion). The second type of
+bonding is covalent bonding. For <strong>covalent bonding</strong>, two molecules share each other their valence electrons (outermost electrons)
+in order to form bonds. The nomenclature for common chemical bonding is:</p>
+<ul>
+<li>Ionic Bonding - usually involved between metals and non-metals. Naming starts with the name of the metal
+(if multiple oxidation states which is common on Transition metals, charge is represented by Roman numerals
+or by the element's classical name) followed by the anionic non-metal. For monoatomic anion, add "-ide"
+to the root word of the element while polyatomic has their respective name.</li>
+<p class="example">Example: NaCl (sodium chloride), Ca(OH)<sub>2</sub> (calcium hyrdoxide)</p>
+<li>Covalent Bonding - usually involved between two non-metals. Naming is through the prefix depending on how many atoms
+are involved (except for monoatomic first element, prefix is omitted). Add "-ide" to the second element.</li>
+<p class="example">Example: CO<sub>2</sub> (carbon dioxide), P<sub>2</sub>O<sub>5</sub> (diphosphorus pentoxide) </p>
+
+<p>During the earlier studies in chemistry, there are few compounds that were named based on their observations or descriptions
+	which are the <strong>archaic names</strong>. For example, they refer calcium sulfate (CaSO<sub>4</sub>) as Plaster of Paris,
+	magnesium hydroxide (Mg(OH)<sub>2</sub>) as Milk of Magnesia, and mercurous chloride (Hg<sub>2</sub>Cl<sub>2</sub>) as Calomel.
+	Currently, other chemical compounds that can be classifed as either inorganic (metal ligand complexes) and organic (compounds mainly
+	composed of carbon and hydrogen elements) compounds have a systematic way in naming them. They have their respective rules for proper naming that would be discussed
+on other higher courses of chemistry. The rules were organized by IUPAC (International Union of Pure and Applied Chemistry).</p>
+</div>
+<div id="content2">
+	<p class="caption">Some Molecules with their Chemical Formula, Chemical Name, and their
+			Chemical Bonding</p>
+			<table class="discov">
+<tr>
+    <th>Chemical Formula</th>
+    <th>Name of the Compound</th>
+    <th>Type of Bonding Involved</th>
+
+  </tr>
+  <tr>
+    <td>NH<sub>4</sub>Cl</td>
+    <td>Ammonium Chloride</td>
+    <td>Ionic Bonding</td>
+  </tr>
+  <tr>
+    <td>N<sub>2</sub>O<sub>4</sub></td>
+    <td>Dinitrogen tetroxide</td>
+    <td>Covalent Bonding</td>
+  </tr>
+  <tr>
+    <td>Ba<sub>2</sub>SO<sub>4</sub></td>
+    <td>Barium Sulfate</td>
+    <td>Ionic Bonding</td>
+  </tr>
+
+  <tr>
+    <td>FeCl<sub>3</sub></td>
+    <td>Iron(III) Chloride or Ferric Chloride</td>
+    <td>Ionic Bonding</td>
+  </tr>
+   <tr>
+    <td>SiO<sub>2</sub></td>
+    <td>Silicon dioxide</td>
+    <td>Covalent Bonding</td>
+  </tr>
+  </table>
+</div>
+<section id="main">
+	<h3><a name="chemeq">Chemical Equations</a></h3>
+				<p>A chemical equation is the representation of chemists or scientists on what chemical reaction occured by which it could either make or break the bonds between the molecules or compounds involved.
+				By convention, the molecules on the left side which are the starting materials are called the <strong>reactants</strong> while the molecules on the right side are the molecules formed due to the result
+				of the chemical reaction are called <strong>products</strong>. In writing chemical equations, the amount of both reactants and products should be <strong>balanced</strong> as it should
+				follow the fundamental chemical observation of the law of conservation of mass. To balance chemical equations, factors or the numbers before the chemical symbols are used which are callled the <strong>coefficients</strong>.
+				For example, we have the chemical reaction between carbon monoxide (CO) and oxygen molecule (O<sub>2</sub>) which forms carbon dioxide (CO<sub>2</sub>):</p>
+					<div class="equation">CO<sub>(g)</sub> + O<sub>2(g)</sub> &#8594 CO<sub>2(g)</sub> </div>
+				<p>It shows that the amount of oxygen of the reactants as compared to the products is not balanced. To make the equation balanced, add a coefficient or number before the chemical symbols that would
+			yield equal amounts of all the elements involved. In this example, we have carbon and oxygen as the elements to be balanced. The coefficient that fits with the elements is 2 (you can choose any number as long as it can balance
+			the chemical equation, but in this simple chemical equation, coefficient 2 would be the best option). From this examples, add the coefficents 2 to both carbon monoxide (CO) and carbon dioxide (CO<sub>2</sub>). The equation is now:</p>
+					<div class="equation">2CO<sub>(g)</sub> + O<sub>2(g)</sub> &#8594 2CO<sub>2(g)</sub> </div>
+			<p>From that chemical equation with coefficients, you can verify your balancing with coefficients by comparing the amount of elements on each side of the reactions. It should be equal to each other, interpretation for thea
+			example is summarized:</p>
+			 	<table class="balance">
+				<tr>
+				<th></th>
+				<th>2CO<sub>(g)</sub></th>
+				<th>O<sub>2(g)</sub></th>
+				<th>Total Number in Reactants </th>
+				<th>2CO<sub>2(g)</sub></th>
+				<th>Total Number in Products</th>
+				</tr>
+			<tr>
+			    <td>Carbon (C)</td>
+			    <td>2</td>
+			    <td>0</td>
+				<td style="text-align:center"><strong>2</strong></td>
+			    <td style="text-align:center">2</td>
+			    <td style="text-align:center"><strong>2</strong></td>
+			  </tr>
+			  <tr>
+			    <td>Oxygen (O)</td>
+			    <td>2</td>
+			    <td>2</td>
+				<td style="text-align:center"><strong>4</strong></td>
+			    <td style="text-align:center">4</td>
+			    <td style="text-align:center"><strong>4</strong></td>
+			  </tr>
+				</table><br>
+				<p>As a result of verification, the total number of carbons from the reactants and products is 2 while oxygen has 4 for both sides. Thus, the whole chemical equation is <strong>balanced</strong>.</p>
+					<p><strong>Sample Problems:</strong><br>Balance the following chemical equations with the simplest coefficents to be added.</p>
+					<ol>
+						<li>SiCl<sub>4</sub> + H<sub>2</sub>O &#8594 H<sub>4</sub>SiO<sub>4</sub> + HCl</li>
+						<li>KClO<sub>3</sub> &#8594 KClO<sub>4</sub> + KCl</li>
+						<li>H<sub>2</sub>SO<sub>4</sub> + HI &#8594 H<sub>2</sub>S + I<sub>2</sub> + H<sub>2</sub>O</li>
+					</ol>
+
+					<div class="viewbutton"><button class="button_2" onclick="showAnswers()"> View Answers</button></div>
+
+					<div class="solanswers" id="answers" hidden><br>Answer 1: SiCl<sub>4</sub> + 4H<sub>2</sub>O &#8594 H<sub>4</sub>SiO<sub>4</sub> + 4HCl <br>
+				    Answer 2: 4KClO<sub>3</sub> &#8594 3KClO<sub>4</sub> + KCl <br>
+					  Answer 3: H<sub>2</sub>SO<sub>4</sub> + 8HI &#8594 H<sub>2</sub>S + 4I<sub>2</sub> + H<sub>2</sub>O
+				</div>
+
+				<h3><a name="typechm">Types of Chemical Reactions</a></h3>
+			<p>Through chemical reactions, atoms of one or more compounds allows itself to form different chemical compounds. Indicators that a chemical reaction occured can be through
+				temperature changes, explosion, formation of gas, formation of precipitates, or through color change. Those characteristics that were observed by scientists leads them to classify
+				the chemical reactions. There are five common types of chemical reactions that occur within compounds. In general chemistry, these types of reactions are synthesis reaction, decomposition
+				reaction, single displacement reaction, double displacement reaction, and combustion reaction.</p>
+			<ul>
+			<li><strong>Synthesis Reaction</strong>- two simple compounds combine to form a single compound. The general formula for this reaction can be
+			represented as: A + B &#8594 AB. Examples are:</li>
+	     <div class="equation">2H<sub>2(g)</sub> + O<sub>2(g)</sub> &#8594 2H<sub>2</sub>O<sub>(g)</sub><br>2Mg<sub>(s)</sub> + O<sub>2(g)</sub> &#8594 2MgO<sub>(s)</sub>  </div>
+			<li><strong>Decomposition Reaction</strong>- the inverse of synthesis reaction by which a single compounds breaks into simpler compounds or elements. The general formula
+			for this reaction can be represented as: AB &#8594 A + B. Examples are:</li>
+	     <div class="equation">2H<sub>2</sub>O<sub>(g)</sub> &#8594 2H<sub>2(g)</sub> + O<sub>2(g)</sub><br> 2NH<sub>3(g)</sub> &#8594 N<sub>2(g)</sub> + H<sub>2(g)</sub></div>
+			<li><strong>Single Displacement Reaction</strong>-the reaction when one element replaces another in a compound. The reaction is common with metallic elements involved
+			and an <strong>activity series of metals</strong> was established to show which of the metals is more reactive to undergo single displacement. The general reaction can be
+			represented as: BC + A &#8594 B + AC. Examples are:</li>
+       <div class="equation">Fe<sub>(aq)</sub> + CuSO<sub>4(aq)</sub> &#8594 Cu<sub>(aq)</sub> + FeSO<sub>4(aq)</sub> <br> Cl<sub>2(g)</sub> + 2KI<sub>(aq)</sub> &#8594 2KCl<sub>(aq)</sub> + I<sub>2(aq)</sub></div>
+			<li><strong>Double Displacement Reaction</strong>-a reaction that occurs when a metal replaces a metal in a compound and a nonmetal in a compound forming two new compounds. The general reaction
+			can be represented as: AB + CD &#8594 BC + AD. Examples are:</li>
+	     <div class="equation">AgNO<sub>3(aq)</sub>+ NaCl<sub>(aq)</sub> &#8594 AgCl<sub>(s)</sub>+ NaNO<sub>3(aq)</sub><br> MgCl<sub>2(aq)</sub> + 2KOH &#8594 Mg(OH)<sub>2(aq)</sub> + 2KCl<sub>(aq)</sub></div>
+			<li><strong>Combustion Reaction</strong>- this reaction involves any hydrocarbon compounds (C<sub>x</sub>H<sub>y</sub>) that reacts with oxygen that produces
+				carbon dioxide and water. Examples are:</li>
+       <div class="equation">CH<sub>4(g)</sub> + O<sub>2(g)</sub> &#8594 CO<sub>2(g)</sub> + 2H<sub>2</sub>O<sub>(g)</sub><br> C<sub>5</sub>H<sub>12(g)</sub> + 8O<sub>2(g)</sub> &#8594 5CO<sub>2(g)</sub> + 6H<sub>2</sub>O<sub>(g)</sub></div>
+			</ul>
+			<h3><a name="stoich">Mass and Moles Relationships (Reaction Stoichiometry)</a></h3>
+			 <p>Atoms are extremely small particles by which it cannot be detected by naked eye and it is impossible to weigh every single atoms needed. With that problem,
+			 scientists had arrived with a solution to determine the mass of one atom relative to another through experiments. The first step is to assign a value to the mass of one atom of a given element
+			so that it can be used as a standard. By international agreement, atomic mass is the mass of the atom in atomic mass units (amu). One atomic mass unit is defined as a mass exactly equal to one-twelfth the mass of one <strong>carbon-12 atom</strong>. Carbon-12 is the
+			carbon isotope that has six protons and six neutrons. Setting the atomic mass of carbon-12 at 12 amu provides the standard for measuring the atomic mass of the other
+			elements.</p>
+			<p>For example, hydrogen atom is known to have 8.40% as massive as the carbon-12 atom. Through that, we can determine the atomic mass of hydrogen by 0.084 multiplied to 12.00 amu which equals to
+			1.008 amu. Similar calculations can also be shown on nitrogen atom, oxygen atom, and other elements.</p>
+
+			<h4> Average Atomic Mass </h4>
+			<p>Most of the naturally occuring elements like carbon atom came to have more than one isotopes. Isotopes are pair or group of a single element that has the same number of protons but different number of neutrons.
+			they vary greatly on the atomic mass since it is equal to the number of protons and neutrons of an atom. This means that when we measure the atomic mass of an element, we must generally settle for the average mass of the naturally occurring mixture of
+			isotopes. We can determine the average atomic mass through the atomic masses of each isotopes with respect to its natural abundances. The equation for the determination of
+			average atomic mass can be illustrated as:</p>
+			<div class="equation">Average Atomic Mass= &#x2211(%Abundance)(Isotopic Mass)</div>
+			<p><strong>Sample Problem:</strong> Silver (Ag) has two naturally occuring isotopes which are <sup>107</sup>Ag and <sup>109</sup>Ag. Given
+			the following data, calculate the average atomic mass of Ag.</p>
+			<table class="balance">
+			<tr>
+			<th>Isotope</th>
+			<th>Mass(amu)</th>
+			<th>% Abundance</th>
+			</tr>
+			<tr>
+			<td><sup>107</sup>Ag</td>
+			<td>106.9059</td>
+			<td>51.84</td>
+			</tr>
+			<tr>
+			<td><sup>109</sup>Ag</td>
+			<td>108.90476</td>
+			<td>48.16</td>
+			</tr>
+			</table>
+
+			<div class="viewbutton"><button class="button_2" onclick="showAnswer()"> View Answer</button></div>
+
+<div  class="solanswers" id="aveamu" style="margin-left:20px;" hidden>Following the formula, we have:<br>
+<div class="divide"><div class="maineq">&sum; (%Abundance)(Isotopic Mass) =</div>(<span class="Fraction"><span class="Numerator">51.84</span>
+<span class="Denominator">100</span></span>)	(106.9059) + <span class="Fraction">(<span class="Numerator">48.16</span>
+<span class="Denominator">100</span></span>) (108.90476)= <strong>107.9 amu</strong></div></div>
+
+<h4>Moles and Avogadro's Number</h4>
+<p>Atomic mass units provide a relative scale for the masses of the elements. But because atoms have such small masses, no usable scale can be devised to weigh them in
+calibrated units of atomic mass units. In the SI system, the  unit mole (mol) is the amount of a substance that contains as many elementary entities as there are atoms in exactly
+12 g (or 0.012 kg) of the carbon-12 isotope. These entities could either be atoms, molecules,ions and other particles. Through experiments, scientists derived a constant number which is
+equivalent to one mole of atoms,molecules, or particles. It is called as the <strong>Avogadro's number</strong> in honor of the Italian scientist, Amedeo Avogadro.</p>
+
+<div class="equation">N<sub>a</sub> = 6.022 x 10<sup>23</sup></div>
+<h4>Percentage Composition</h4>
+<p>Percentage composition by mass is the percent by mass of each element in a compound.
+ You can obtain it by dividing the mass of each element in 1 mole of the compound by the molar mass of the compound and then multiplying by 100 percent.
+It can be mathematically expressed as:</p>
+<div class="frac"><div class="maineq"> %Composition =</div>(<span class="Fraction"><span class="Numerator">n x MW<sub>element</sub></span>
+<span class="Denominator">MW<sub>compound</sub></span></span>) x 100%</div>
+
+<p> where <em>n</em> is the number of moles of the element to be determined on percentage composition.</p>
+<p><strong>Sample Problems:</strong> </p>
+<ol>
+<li>How many N atoms are present in 20.0 grams of KNO<sub>3</sub>?</li>
+<li>Chalcopyrite (CuFeS<sub>2</sub>) is a principal mineral of copper. How many percent copper is present in this mineral?</li>
+</ol>
+<div class="viewbutton"><button class="button_2" onclick="showAnswer3()"> View Solutions and Answers</button></div>
+<div class="solanswers" id="moreanswer" hidden>
+<p>1. To solve for N atoms, convert the mass of KNO<sub>3</sub> to moles of N and then use Avogadro's number to convert it into N atoms. The solution should be:</p>
+
+<div class="frac"><div class="maineq"> moles of H<sub>2</sub>O = (20.0 g KNO<sub>3</sub>)</div>(<span class="Fraction"><span class="Numerator">1 moles KNO<sub>3</sub></span>
+<span class="Denominator">101.10 g KNO<sub>3</sub></span></span>) (<span class="Fraction"><span class="Numerator">1 moles N</span>
+<span class="Denominator">1 moles KNO<sub>3</sub></span></span>)(<span class="Fraction"><span class="Numerator">6.022 x 10<sup>23</sup> atoms N</span>
+<span class="Denominator">1 moles N</span></span>) </div>
+<br><div class="equation">=<strong>1.19 x 10<sup>23</sup> N atoms</strong></div>
+<p>2. For percentage copper in the compound,</p>
+<div class="divide"><div class="maineq" style="margin-left:20px;"> %Composition =</div>(<span class="Fraction"><span class="Numerator">n x MW<sub>Cu</sub></span>
+<span class="Denominator">MW<sub>CuFeS<sub>2</sub></sub></span></span>) x 100%= [<span class="Fraction"><span class="Numerator">(1 mol Cu)(63.55 g/mol Cu)</span>
+<span class="Denominator">(183.5 g CuFeS<sub>2</sub>)</span></span>] x 100% =<strong>34.63 %Cu</strong></p> </div>
+</div>
+<h4>Conversion of Mass and Moles</h4>
+	<p class="parjustify">The amounts of reactants and products can be obtained through quantitative interperetation called <strong>stoichiometry</strong>. This process is
+	a core idea in chemistry in order to transact moles to masses,masses to moles, or masses to masses of reactants and products present in a chemical reaction.
+	Other parameters such as pressures and volumes (for gases) can also be identified through the concept of stoichiometry. To perform this technique, it is also
+    similar to dimensional analysis on units like converting grams to kilograms. In stoichiometry with respect to chemical reactions, the key factors to achieve the desired value are
+the molecular mass or molecular weight of the elements and the compounds(unit is g/mol), and the mole ratio that is based on a balanced chemical reaction.
+Consider the hypothetical reaction A &#8594 B to visualize the flowchart below.</p>
+<div class="centerme"><img src="./imggchm/stoich.JPG" height="100" /></div>
+	<div class="caption">General Approach with Reaction Stoichiometry</div>
+</section>
+<div id="content3">
+	<h4>Sample Problems with  Reaction Stoichiometry</h4>
+				<ol>
+				<li>How many moles of H<sub>2</sub>O are formed from the complete combustion of 45.0 g of methanol (CH<sub>3</sub>OH)? The reaction is:<br>
+				<p class="equation">2CH<sub>3</sub>OH + 3O<sub>2</sub> &#8594 2CO<sub>2	</sub> + 4H<sub>2</sub>O </p>
+				</li>
+				<li>How many grams of ammonia will be formed from the complete reaction of 0.237 moles of H<sub>2</sub>? The reaction is: <br></li>
+					<p class="equation"> N<sub>2</sub> + 3H<sub>2</sub> &#8594 2NH<sub>3</sub></p>
+
+				<li>If 32.0 g of oxygen reacts with sufficient magnesium to produce magnesium oxide, what is the theoretical yield? The reaction is:</li>
+					<p class="equation"> 2Mg + O<sub>2</sub> &#8594 2MgO</p>
+				</ol>
+				<div class="viewbutton"><button class="button_2" onclick="stoichAnswers()"> View Solutions and Answers</button></div>
+</div>
+<div id="content4">
+	<img src="./imggchm/flame tests.jpg" height="200" width="450"/>
+		<div class="caption" >Flame Tests is a chemical reaction wherein metal ions emits different colors based on
+		the element's characteristic emission spectrum. Samples are usually held on a platinum wire washed with hydrochloric acid.
+		The chemical reaction with M as the metal ion:  M<sup>+</sup> + 2HCl &#8594 MCl<sub>2</sub> + H<sub>2</sub></div>
+	</div>
+
+<div id="pageop">
+	<div class="solanswers" id="stoichanswers" hidden>
+		<p>Solutions to the Problems</p>
+	<ol>
+	<li>To solve for the moles of H<sub>2</sub>O from grams of methanol, we have the strategy:</li>
+	<p> <strong>Step 1:</strong> (45.0 grams CH<sub>3</sub>OH)(MW<sub>CH<sub>3</sub>OH</sub>) <span style="color:green">*This converts the grams of methanol to moles of methanol</span></p>
+	 <p><strong>Step 2:</strong>(moles of CH<sub>3</sub>OH</sub>)(Mole Ratio of CH<sub>3</sub>OH</sub> to H<sub>2</sub>O) <span style="color:green">*Based on the coefficients of the chemical reaction, to determine the moles of H<sub>2</sub>O</span></p>
+	<p>In summary, we solve by,</p>
+	<div class="frac"><div class="maineq"> moles of H<sub>2</sub>O = (45.0 grams CH<sub>3</sub>OH)</div>(<span class="Fraction"><span class="Numerator">1 mole CH<sub>3</sub>OH</span>
+	<span class="Denominator">32 grams CH<sub>3</sub>OH</span></span>) (<span class="Fraction"><span class="Numerator">4 moles H<sub>2</sub>O</span>
+	<span class="Denominator">2 moles CH<sub>3</sub>OH</span></span>) = <strong> 2.81 moles H<sub>2</sub>O</strong></div>
+
+	<li>Same step goes through with the determination of grams of ammonia, always use the chemical equation as the basis of mole ratio and molecular weights involved:</li>
+	<div class="frac"><div class="maineq"> grams of NH<sub>3</sub> = (0.237 moles H<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">2 moles NH<sub>3</sub></span>
+	<span class="Denominator">3 moles H<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">17 grams NH<sub>3</sub></span>
+	<span class="Denominator">1 mole NH<sub>3</sub></span></span>) = <strong> 2.69 grams NH<sub>3</sub></strong></div>
+
+	<li>Theoretical yield means the amount of the products (in grams) that can be yielded with respect to the limiting reactant(the reactant element or compound that when totally consumed in the reaction results
+	for the chemical reaction to stop). In this case, grams of O<sub>2</sub> is given to solve the problem as follows:</li>
+	<div class="frac"><div class="maineq"> grams of MgO = (32.0 grams  O<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">1 moles O<sub>2</sub></span>
+	<span class="Denominator">32 grams O<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">2 moles MgO</span>
+	<span class="Denominator">1 mole O<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator"> 40.305 grams MgO</span>
+	<span class="Denominator">1 mole MgO</span></span>)= <strong> 80.6 grams MgO</strong></div>
+	</ol>
+</div>
+
+<h3><a name="limits">Limiting Reactants and Percentage Yield</a></h3>
+			<p>In a chemical reaction, we can ask the question when will the chemical put to a stop? The answer for it is the amount of the <strong>limiting reactant</strong>. In some chemical reactions,
+		especially synthesis, displacements, and combustion reactions, contain more than one reactants in the chemical reaction. With such reactions, one of them is classified as the limiting
+		reactant by which it can be determined through their amounts. Meanwhile, the remaining reactants are called the <strong>excess reactants</strong>. You can take the principle to have the analogy
+		as making a delicious brewed coffee. For that, you're going to need brewed coffee beans, creamer, and sugar which represents the reactants. If one of those three is totally consumed or phased out from the supplies,
+		that would stop you in making brewed coffee. Thus, one of them  represents as the limiting reactant while the remaining components are the excess reactants. In chemical reactions, limiting reactants can be determined by
+		identifying the amount(either in terms of mass or moles) of each of the reactants and then the smallest amount among the reactants is the limiting reactant. To further visualize the concept, consider the reaction of
+		aluminum (Al) with chlorine gas (Cl<sub>2</sub>) to form aluminum chloride(AlCl<sub>3</sub>). For example, there are 10 grams of aluminum and 20 grams of chlorine gas as your starting material for the reaction. </p>
+		<div class="equation">2Al + 3Cl<sub>2</sub> &#8594 2AlCl<sub>3</sub></div>
+
+		<p>Using the balanced chemical equation, determine the grams of AlCl<sub>3</sub> for each of the reactants,</p>
+<p>For Al:</p>
+<div class="frac"><div class="maineq"> grams of AlCl<sub>3</sub> = (10.0 grams  Al)</div>(<span class="Fraction"><span class="Numerator">1 mole Al</span>
+<span class="Denominator">27 grams Al</span></span>) (<span class="Fraction"><span class="Numerator">2 moles AlCl<sub>3</sub></span><span class="Denominator">2 moles Al</span></span>) (<span class="Fraction"><span class="Numerator"> 133.35 grams AlCl<sub>3</sub></span>
+<span class="Denominator">1 mole AlCl<sub>3</sub></span></span>)= <strong> 49.39 grams AlCl<sub>3</sub></strong></div>
+<p>For Cl<sub>2</sub>:</p>
+<div class="frac"><div class="maineq"> grams of AlCl<sub>3</sub> = (20.0 grams  Cl<sub>2</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole Cl<sub>2</sub></span>
+<span class="Denominator">70.9 grams Cl<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator">2 moles AlCl<sub>3</sub></span><span class="Denominator">3 moles Cl<sub>2</sub></span></span>) (<span class="Fraction"><span class="Numerator"> 133.35 grams AlCl<sub>3</sub></span>
+<span class="Denominator">1 mole AlCl<sub>3</sub></span></span>)= <strong> 25.08 grams AlCl<sub>3</sub></strong></div>
+
+<p>We already know that the limiting reactant is Cl<sub>2</sub> by which the grams of AlCl<sub>3</sub> obtained is the theoretical yield. To solve for percentage yield, take the ratio of the actual yield over the theoretical yield multiplied by 100 percent:</p>
+<div class="frac"><div class="maineq"> Percentage Yield = </div><span class="Fraction"><span class="Numerator">Actual Yield</span>
+<span class="Denominator">Theoretical Yield</span></span> x 100% =<span class="Fraction"><span class="Numerator">Actual Yield of grams AlCl<sub>3</sub></span><span class="Denominator">Theoretical Yield of grams AlCl<sub>3</sub></span></span>x 100% =<span class="Fraction"><span class="Numerator"> 23.85 grams AlCl<sub>3</sub></span>
+<span class="Denominator">25.08 grams AlCl<sub>3</sub></span></span>x 100% = <strong> 95%</strong></div><br>
+<p>Thus, the percentage yield of the formation of AlCl<sub>3</sub> is <strong>95%</strong> based on the given starting materials and result of an experiment.</p>
+<p>Comparing the grams of AlCl<sub>3</sub> resulted from the two reactants, the smallest amount from the two results (49.39 grams &lt; 25.08 grams) is from chlorine gas. Thus, the limiting reactant in this example is
+Cl<sub>2</sub>. It means that when the whole 20 grams of Cl<sub>2</sub> is totally consumed in the chemical reaction, the reaction stops that has a theoretical yield of 25.08 grams of grams AlCl<sub>3</sub>.
+Another concept being studied in chemical reactions is the <strong>percentage yield</strong> which shows a comparison of the theoretical yield with respect to the actual yields. Actual yield is the amount of the product obtained based on an
+experiment. For example, a certain experiment with the same chemical reaction with aluminum and chlorine gas yields to the production of 23.85 grams of grams AlCl<sub>3</sub>. What is the percentage yield of AlCl<sub>3</sub> reaction such that the
+starting materials is the same with the first example (10 grams of Al and 20 grams of Cl<sub>2</sub>)?</p>
+
+<p>We already know that the limiting reactant is Cl<sub>2</sub> by which the grams of AlCl<sub>3</sub> obtained is the theoretical yield. To solve for percentage yield, take the ratio of the actual yield over the theoretical yield multiplied by 100 percent:</p>
+<div class="frac"><div class="maineq"> Percentage Yield = </div><span class="Fraction"><span class="Numerator">Actual Yield</span>
+<span class="Denominator">Theoretical Yield</span></span> x 100% =<span class="Fraction"><span class="Numerator">Actual Yield of grams AlCl<sub>3</sub></span><span class="Denominator">Theoretical Yield of grams AlCl<sub>3</sub></span></span>x 100% =<span class="Fraction"><span class="Numerator"> 23.85 grams AlCl<sub>3</sub></span>
+<span class="Denominator">25.08 grams AlCl<sub>3</sub></span></span>x 100% = <strong> 95%</strong></div><br>
+<p>Thus, the percentage yield of the formation of AlCl<sub>3</sub> is <strong>95%</strong> based on the given starting materials and result of an experiment.</p>
+
+<h3><a name="combust">Elemental and Combustion Analysis</a></h3>
+<p> Chemical formula are the basis of the components of a chemical reaction. In the laboratory, chemists perform experiments in obtaining the masses of a specific compound and through that,
+they can derive the chemical formula and identity of a substance. Such analysis is called <strong>elemental analysis</strong>, by which masses of each elements identified were used to formulate the chemical formula of
+a substance. Elemental analysis is an application for both the principle of percent by mass and reaction stoichiometry. Empirical formula, the simplest chemical formula with respect to its reduced subscripts, can be obtained from
+the masses of the each of the elements and converting it to moles. From the moles of the elements, mole ratio can be obtained. However, if you want to obtain the molecular formula which is the actual formula of the compound, a whole
+number factor should be multiplied to the subscripts of the empirical formula. The factor n is expressed as:</p>
+<div class="frac"><div class="maineq"> n =</div><span class="Fraction"><span class="Numerator">Molecular Mass (MM)</span>
+<span class="Denominator">Empirical Mass (EM)</span></span></div><br>
+<p>Another type of analysis with the application of reaction stoichiometry and percentage by mass is <strong>combustion analysis</strong>. Combustion analysis mainly focuses on the identification of the chemical formula
+for hydrocarbons and alcohols. These are identified with the basis of elemental analysis on the usual products of combustion reactions. The amount of carbon dioxide is relative to the amount of carbon while the amount of water
+is relative to the amount of hydrogen in the hydrocarbon. We can illustrate the typical combustion reaction as:</p>
+<div class="equation">C<sub>x</sub>H<sub>y</sub> + O<sub>2</sub> &#8594 CO<sub>2</sub> + H<sub>2</sub>O</div>
+
+<p>Take note for the mole ratios for the stoichiometry is: 1 mol CO<sub>2</sub>= 1 mol C, and 1 mol H<sub>2</sub>O = 2 mol H</p>
+
+<h4>Sample Problems with  Elemental and Combustion Analysis</h4>
+	<ol>
+	<li>A 1.500 gram sample of Na<sub>2</sub>SO<sub>4</sub>&middotxH<sub>2</sub>O was heated to liberate 90% of H<sub>2</sub>O.
+	The resulting mass of solid weighs 0.685 grams. Find the value of the coefficient x.</li><br>
+	<li>A certain substance undergoes elemental analysis in the laboratory and it was found to have 2.82 grams of Na, 4.35 grams of Cl, and
+	7.83 grams of O. What is the most possible chemical formula of the said substance?</li><br>
+	<li>An unknown alcohol was found out to have a molecular mass of 90.08 g/mol through mass spectroscopy. The components of the hydrocarbon
+	were observed to be 40% carbon, 6.71% hydrogen, and 53.3% oxygen. What is the empirical formula and molecular formula of the unknown alcohol?</li><br>
+	</ol>
+	<div class="viewbutton"><button class="button_2" onclick="showAnswer4()"> View Solutions and Answers</button></div>
+	<div id="elementalanswer" hidden>
+		<ol>
+		<li>Identify the libreated H<sub>2</sub>O in order to find the total H<sub>2</sub>O content. After that the moles of H<sub>2</sub>O and Na<sub>2</sub>SO<sub>4</sub> is proportional
+		to the coefficients in its chemical formula. The process is:</li>
+		<p>H<sub>2</sub>O<sub>liberated</sub>= 1.500 grams sample - 0.685 grams dried= 0.815 grams H<sub>2</sub>O</p>
+		<p>0.815 grams H<sub>2</sub>O = (90%)(H<sub>2</sub>O<sub>total</sub>)</p>
+		<p>H<sub>2</sub>O<sub>total</sub>= 0.815 grams/0.90 = 0.906 grams H<sub>2</sub>O</p>
+		<p>Assume that the sample is 100% dry to solve for grams of Na<sub>2</sub>SO<sub>4</sub>:
+		= 1.500 grams sample - 0.906 grams H<sub>2</sub>O = 0.594 grams Na<sub>2</sub>SO<sub>4</sub></p>
+		<p>For moles of H<sub>2</sub>O and Na<sub>2</sub>SO<sub>4</sub>:</p>
+		<div class="frac"><div class="maineq">moles of H<sub>2</sub>O = (0.906 g H<sub>2</sub>O)</div>(<span class="Fraction"><span class="Numerator">1 mole H<sub>2</sub>O</span>
+	<span class="Denominator">18 g H<sub>2</sub>O</span></span>)= 0.0503 mol H<sub>2</sub>O</div>
+	<div class="frac"><div class="maineq">moles of Na<sub>2</sub>SO<sub>4</sub> = (0.594 g Na<sub>2</sub>SO<sub>4</sub>)</div>(<span class="Fraction"><span class="Numerator">1 mole Na<sub>2</sub>SO<sub>4</sub></span>
+	<span class="Denominator">142 g Na<sub>2</sub>SO<sub>4</sub></span></span>)= 4.18 x 10<sup>-3</sup> mol Na<sub>2</sub>SO<sub>4</sub></div>
+	<p>By ratio and proportion of moles to coefficients:</p>
+		<div class="frac">(<span class="Fraction"><span class="Numerator"> 4.18 x 10<sup>-3</sup> mol Na<sub>2</sub>SO<sub>4</sub></span>
+	<span class="Denominator">0.0503 mol H<sub>2</sub>O</span></span>)= (<span class="Fraction"><span class="Numerator"> 1 mol Na<sub>2</sub>SO<sub>4</sub></span>
+	<span class="Denominator"> x </span></span>)</div>
+	<div class="equation">x = <strong>12</strong></div>
+	<li>To solve chemical formula in elemental analysis, convert the given grams to moles and then solve for mole ratio. For mole ratio, identify the smallest moles among
+	the elements and use it as the factor to divide each of the elements. The solution can be summarized in a table as shown:</li>
+		<table class="balance">
+		<tr>
+		<th>Elements</th>
+		<th>Mass</th>
+		<th>Moles</th>
+		<th>Mole Ratio</th>
+		</tr>
+		<tr>
+		<td>Na</td>
+		<td>2.82 grams</td>
+		<td>0.1226 moles</td>
+		<td style="text-align:center">1</td>
+		</tr>
+
+		<tr>
+		<td>Cl</td>
+		<td>4.35 grams</td>
+		<td>0.1227 moles</td>
+		<td style="text-align:center">1</td>
+		</tr>
+
+		<td>O</td>
+		<td>7.83 grams</td>
+		<td>0.4894 moles</td>
+		<td style="text-align:center">4</td>
+		</tr>
+		</table>
+		<p>From the table, you can observe that grams are converted into moles (first and second column). It is through the use molecular weights
+			of the elements, for Na=23 g/mol, for Cl=35.45 g/mol ,and O = 18 g/mol. After the moles were identified, the result shows that 0.1226 moles is the least
+		    value among the moles. This value is to be used to determine the mole ratio, dividing each of the moles, you obtain the mole ratio (column 3). As a result,
+		the mole ratio are 1:1:4 which concludes as the empirical formula of <strong>NaClO<sub>4</sub></strong>.</p>
+		<li>Same process like in problem number 2 goes through with combustion analysis in finding empirical formula. The difference is that the given is in % by mass instead of masses. Assume that
+		the components are in 100% total and proportional to each grams. It means that 40% carbon is 40 grams carbon and so on. The solution is:</li><br>
+		<table class="balance">
+		<tr>
+		<th>Elements</th>
+		<th class="percentmass">% by Mass</th>
+		<th>Mass</th>
+		<th>Moles</th>
+		<th>Mole Ratio</th>
+		</tr>
+		<tr>
+		<td>C</td>
+		<td class="percentmass">40</td>
+		<td>40 grams</td>
+		<td>3.33 moles</td>
+		<td style="text-align:center">1</td>
+		</tr>
+
+		<tr>
+		<td>H</td>
+		<td class="percentmass">6.71</td>
+		<td>6.71 grams</td>
+		<td>6.71 moles</td>
+		<td style="text-align:center">2</td>
+		</tr>
+
+		<td>O</td>
+		<td class="percentmass">53.33</td>
+		<td>53.33 grams</td>
+		<td>3.33 moles</td>
+		<td style="text-align:center">1</td>
+		</tr>
+		</table>
+		<p>The mole ratio is 1:2:1, thus the empirical formula is <strong>CH<sub>2</sub>O</strong>. Next is to identify the factor for molecular formula identification. The
+			molecular mass is given in the problem (90.08 g/mol) while empirical mass can be solved on the molecular weight of the empirical formula which is 30 g/mol.
+			Solving for the factor:
+			<div class="frac"><div class="maineq"> n =</div><span class="Fraction"><span class="Numerator">Molecular Mass (MM)</span>
+		<span class="Denominator">Empirical Mass (EM)</span></span>=<span class="Fraction"><span class="Numerator">90.08 g/mol</span>
+		<span class="Denominator">30 g/mol</span></span>= <strong>3</strong></div>
+		<p>The factor is 3, multiplying it to the subscripts of the empirical formula, we have: 3 &middot CH<sub>2</sub>O =
+		<strong>C<sub>3</sub>H<sub>6</sub>O<sub>3</sub></strong> as the molecular formula of the unknown alcohol.</p>
+		</div>
+		<div><p>In some instances, when dividing the moles with the smallest moles, the ratio to be obtained is not an integer (it is fractional like 0.25 or 0.33). Rounding
+		off the value to the nearest whole number is not a valid solution to obtain the mole ratio. The solution is to multiply the result of mole ratio with a <strong>whole number</strong>
+		that could make it an integer. Upon multiplying with a number, all other elements even though it yields a whole number, would be affected with the multiplication of that factor.
+		For example, the resulting mole ratio upon division gives a result of 2.33. Mole ratio 2.33 is not  valid to be rounded off so it should be multiplied by a number, let's say 3 to have a value of 6.99 or approximately <strong>7</strong>.
+		All other elements should be multiplied by 3 to make it uniform on the empirical formula. If you encountered, these instances in solving chemical formula.
+		Mole ratio with decimal points <strong>0.25</strong> should be multipled by <strong>4</strong>, &nbsp <strong>0.33</strong> should be multipled by <strong>3</strong>, &nbsp
+		<strong>0.50</strong> should be multipled by <strong>2</strong>, &nbsp <strong>0.67</strong> should be multipled by <strong>3</strong>, &nbsp
+		and <strong>0.75</strong> should be multipled by <strong>4</strong> in order to make them a whole number.</p></div>
+<div class="btn-group">
+<form action="gchm1.html"><button class="button">Previous Page</button></form>
+<form action="gchm3.html"><button class="button">Next Page</button></form>
+</div><br>
+
+	<footer>
+		<div class="equation">Bryan's SciTutor Copyright &copy; 2020 All Rights Reserved.</div>
+		</footer>
+</div>
+
+ </div>
+</section>
+
+	</body>
+</html>
