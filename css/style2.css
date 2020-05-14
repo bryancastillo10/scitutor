@@ -579,7 +579,7 @@ width:100%;
   grid-template-rows: 10fr 0.5fr;
   grid-template-areas: "examain" "bottom";
 }
-  #content1 h3, #main h3 {
+  #content1 h3, #main h3, #examain h3{
       display:inline-flex;
       padding-top: 80px;
   }
