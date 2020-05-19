@@ -1,0 +1,435 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="A student-friendly science tutorial">
+	<meta name="keywords"   content="online course, science, biology,chemistry">
+	<meta name="author" content="Bryan Castillo">
+	<title>Inorganic Chemistry</title>
+	<link rel="stylesheet" href="./css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function openSlideMenu(){
+		document.getElementById('side-menu').style.width = '230px';
+		document.getElementById('gridcontainer').style.marginLeft = '230px';
+	}
+
+	function closeSlideMenu(){
+		document.getElementById('side-menu').style.width = '0';
+		document.getElementById('gridcontainer').style.marginLeft = '0';
+	}
+
+	function viewLewis() {
+		var x = document.getElementById("Lewis");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}}
+
+	function viewMorbital() {
+			var x = document.getElementById("oxygenMO");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}}
+	</script>
+	</head>
+	<body>
+	<header>
+	<div class="container">
+		<span class="open-slide">
+	<a href="#" onclick="openSlideMenu()">
+		<svg width="30" height="30">
+				<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+				<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+		</svg>
+	</a>
+	</span>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<div class="lec"><h3>Outline of the Course</h3>
+<ul>
+<li><a href="#lewis">Lewis Structures</a></li>
+<li><a href="#formal">Formal Charges</a></li>
+<li><a href="#deviate">Deviations from Octet Rule</a></li>
+<li class="targethover"><a href="#bonds">Bonding Theories<i class="fa fa-angle-right"></i></a>
+	<div class="submenu-2"><ul>
+			<li class="targethover-2"><a href="#vb">Valence Bond Theory</a></li>
+			<li  class="targethover-3"><a href="#vsepr">VSEPR Theory</a></li>
+			<li  class="targethover-4"><a href="#mo">MO Theory</a></li>
+	</ul></div>
+</li>
+<li class="targethover"><a href="#">More Topics<i class="fa fa-angle-right"></i></a>
+	<div class="submenu-1"><ul>
+			<li><a href="inorg1.html">Page 1</a></li>
+			<li><a href="inorg3.html">Page 3</a></li>
+			<li><a href="inorg4.html">Page 4</a></li>
+	</ul></div>
+</li>
+<li class="hoverexam"><a href="#">Practice Exams<i class="fa fa-angle-right"></i></a>
+<div class="submenu-x"><ul>
+	<li><a href="">Problem Solving</a></li>
+	<li><a href="">Multiple Choice</a></li>
+</div></ul>
+</li>
+</ul></div>
+	</div>
+		<div id="branding"><h1><span class="highlight">Bryan's</span> SciTutor</h1></div>
+	<nav>
+		<ul>
+
+		<li><a href="index.html">Home</a><i class="fa fa-home"></i></li>
+		<li><a href="about.html">About Us</a><i class="fa fa-user"></i></li>
+		<li class="current"><a href="courses.html">Courses<i class="fa fa-clone"></i></a></li>
+		</ul>
+	</nav>
+	</div>
+	</header>
+<div id="gridcontainer">
+<div id="content1">
+ <h3><a name="name">Lewis Structure</a></h3>
+ <p>A very effective way to illustrate valence electrons in an element or a compound is through the illustration of
+ <strong>Lewis structure</strong>. It is a simplified representation of the element wherein valence electrons are
+represented by dots and bonds are represented by a line. It also exhibits how bonding of molecules should follow the octet
+rule. <strong>Octet rule</strong> is the ability of atoms to achieve eight electrons in  total as part of their valence shells
+which signifies their stability. Elements that already followed this rule are noble gases (group VIII in the periodic table).
+However, there are some molecules that have exceptions in octet rule which is to be discussed also in this section. Let's take as
+an example the drawing of Lewis structure of N<sub>2</sub> molecule.</p>
+<ul>
+<li>The total number of valence electron on one nitrogen atom is 5 e<sup>&#8722;</sup>. Since there are two atoms, we have
+10 e<sup>&#8722;</sup> available.</li>
+<div class="centerme"><img src="./imginorg/lewis1.JPG"/></div>
+<li>Connecting two dots to represent a covalent bond (shows that two valence electrons share each other)</li>
+<div class="centerme"><img src="./imginorg/lewis2.JPG"/></div>
+<li>With that single bond formed, it still doesn't follow the octet rule by which each atom should have eight valence electrons,
+we need to add more bonds until it meets the octet rule.</li>
+<div class="centerme"><img src="./imginorg/lewis3.JPG"/></div>
+<li>Addition of two more bonds that makes N<sub>2</sub> a triple bond shows that each atom follows the octet rule. Counting the
+valence electrons (1 bond = 2 valence electrons that are shared to each other), the total number of valence electron is still 10 e<sup>&#8722;</sup>.
+Thus, the appropriate Lewis structure for N<sub>2</sub> is the one with triple bond.</li>
+</ul>
+<p>If the molecule exhibits ionic bonding, the Lewis structure is simply the ions separated with brackets and the charges are indicated.
+For example, we have MgBr<sub>2</sub>:</p>
+<div class="centerme"><img src="./imginorg/lewisionic.JPG" height="150"/></div>
+</div>
+<div id="content2">
+<div class="dark">
+<h4>How to Draw a Lewis Structure of Molecules</h4>
+<ol>
+<li>Determine the elements present in the molecule and valence electrons of each. Take the sum of it.</li>
+<li>Place the each elements together wherein the central atom is at the center. The central atom is
+the one that can form the greatest number of bonds with respect to their valence electrons.</li>
+<li>You can now add the electrons represented by dots in pairs surrounding the atoms. A line represents
+a covalent bond between the atoms. Follow the octet rule as much as possible.</li>
+<li>If there are remaining elecrons, it signifies that there is a formal charge. It should be indicated
+in the Lewis structure at the upper right side of the molecule with brackets enclosed the structure. </li>
+</ol>
+</div>
+<p>For more examples of molecules and its Lewis structure. click the button below:</p>
+	<div class="viewbutton"><button class="button_2" onclick="viewLewis()">Lewis Structures Example</button></div>
+</div>
+<section id="main">
+	<div id="Lewis" hidden>
+   	<div class="centerme"><img src="./imginorg/structuresample.JPG" height="200"></div>
+	</div>
+	<h3><a name="formal">Fomal Charges</a></h3>
+ <p>Through the Lewis structure, you can determine how many valence electrons are present for a compound to be formed. Additionally,
+ constructing a Lewis structure is more appropriate when you know the formal charge of an atom in the molecule.<strong>Formal charge</strong> is the charge of an atom in a
+molecule or a polyatomic ion when all of the bonding electrons that were shared equally. To determine the formal charge, </p>
+<div class="equation">Formal Charge of an Atom =   Number of Valence e<sup>&#8722;</sup> &#8722; e<sup>&#8722;</sup> Surrounding the Atom</div>
+<p>such that</p><div class="frac"><div class="maineq"> e<sup>&#8722;</sup> Surrounding the Atom =  Lone Pair e<sup>&#8722;</sup> + </div><span class="Fraction"><span class="Numerator">Bonding e<sup>&#8722;</sup></span>
+<span class="Denominator">2</span></span></div>
+<p>As you can observe from the formula for electrons surrounding the atom, bonding e<sup>&#8722;</sup> is divided by two because in
+	calculating formal charges, we only consider the electrons WITHIN the atom itself and disregard the shared electron from bonding.
+	For example, identify the formal charges of C and O in CO<sub>3</sub>. Lewis structure for C in CO<sub>3</sub> is:</p>
+<div class="centerme"><img src="./imginorg/CO3.JPG"/ height="180"></div>
+<p>Analyzing carbon atom in CO<sub>3</sub>, we know that the valence electron of carbon is 4 (you can also easily identify it by refering to the
+	group number of the carbon in the periodic table of elements), the number of lone pairs in this molecule is 0, and the bonding electrons is composed of
+8 (single bond has two electrons each).Now, following the formula for the formal charge,</p>
+<div class="frac"><div class="maineq"> Formal Charge of C =  4 &#8722; ( 0 + </div><span class="Fraction"><span class="Numerator">8</span>
+<span class="Denominator">2</span></span>) = &nbsp; <strong>0</strong></div>
+<p>The carbon atom in CO<sub>3</sub> is zero which indicates that it is a neutral atom. Meanwhile for the single bonded oxygen atoms in the structure. Identifying the formal charges,
+valence electron of O is 6, lone pair electrons are 6, and the bonding electrons is 2 in each oxygen atom. Calculating the oxygen formal charge,</p>
+<div class="frac"><div class="maineq"> Formal Charge of O =  6 &#8722; ( 6 + </div><span class="Fraction"><span class="Numerator">2</span>
+<span class="Denominator">2</span></span>) = &nbsp; <strong>&#8722; 1</strong></div>
+<p>It shows that the oxygen atom with a single bond on the Lewis structure indicates a charge of &#8722; 1. The overall charge of the molecule is
+&#8722;1 + &#8722;1 = <strong>&#8722;2</strong>(since it has two single bonded oxygen atom). The more appropriate Lewis structure of CO<sub>3</sub> should be represented as:</p>
+<div class="centerme"><img src="./imginorg/CO3final.JPG" height="180"/></div>
+<p>In some cases, there are multiple Lewis structures that can represent a single compound. These similar structures are called
+<strong>resonance structures</strong> by which all of them are acceptable structures. In some cases, one of the  structures is to be cosidered
+most electronegative. The shifting of the structure in different forms is due to the delocalized electron which can affect the
+formal charges of each of the atom. An example of a compound with resonance structure is CON, the structure on the right is more
+electronegative than the structure on the left side.</p>
+<div class="centerme"><img src="./imginorg/resonance.JPG"/></div>
+<h3><a name="deviate">Deviations in Octet Rule</a></h3>
+<p>Octet rule is most applicable on elements with atomic number below 20 by which they comply their stability by achieving eight valence electrons
+to give the same electronic configurations as of the noble gases. However, there are cases some elements that doesn't require the octet rule
+when forming stable bonds with another atom.</p>
+<ol>
+<li><strong>Reduced Octet Rule</strong></li>
+<p>This case happens when there are too few valence electrons involved to complete the total of eight valence electron in an atom. It is common
+with the bonding of elements such as boron, aluminum, and beryllium. For example, we have borane (BH<sub>3</sub>) and Beryllium chloride (BeCl<sub>2</sub>).</p>
+<div class="centerme"><img src="./imginorg/reducedoctet.JPG" height="150"/></div>
+
+<li><strong>Odd Number of Electrons Compounds</strong></li>
+<p>This exception is for cases when the total number of valence electrons of a molecule is equal to an odd number. Valence electrons
+usually come in pairs with regards to its sharing to the other atom and its polarity (represented by lone pairs of electrons).
+However, there are highly reactive chemical species called <strong>free radicals</strong> that are formed from the odd number of total valence
+electrons. The reason for them to be highly reactive they want to take an electron to another molecule in order for them to become stable. It is very
+rare to find radicals that are stable enough just like nitric oxide (NO) which has odd number of valence electrons (11 in total). To indicate unstable radicals, you can put "<strong>&middot;</strong>" symbol
+beside on the chemical formula. For example, hydroxyl radical is represented by &middot;OH. The Lewis structures below are the resonance structures of
+nitric oxide which has an odd number of valence electrons and a radical.</p>
+<div class="centerme"><img src="./imginorg/nitricoxide.JPG" height="150"/></div>
+<li><strong>Expanded Octet Rule</strong></li>
+<p>Other than the case of too few valence electrons, there is also a situation wherein valence electrons are too many that exceeds the
+eight electrons to follow octet rule. This is usually happening with molecules with highly electronegative terminal atoms (atoms that surrounds
+the central atom). Examples of molecules under the expanded octet rule are phosphorus pentachloride, PCl<sub>5</sub> (total valence electron of 40 e<sup>&#8722;</sup>)
+and xenon tetrafluoride, XeF<sub>4</sub> (total valence electron of 36 e<sup>&#8722;</sup>). The reason for this event is that there is an empty d orbitals
+(in the third period elements like P) for them to allow excess electrons to occupy thus making chemical bonds. Lewis structures of the examples
+are as follows:</p>
+<div class="centerme"><img src="./imginorg/expandedoctet.JPG" height="170"/></div>
+</ol>
+<h3><a name="#bonds">Bonding Theories</a></h3>
+<p>Seeking for the full understanding of chemical bonding, there are several theories that were derived to demonstrate
+how valence electrons behave as it undergoes chemical bonding. These theories are acceptable in different situations
+that further reveals the identity and nature of some molecules. </p>
+<h4><a name="vb">Valence Bond Theory</a></h4>
+<p>This bonding theory states that only valence orbitals participate in the formation of a bond.
+The process of forming this bonds is called <strong>hybridization</strong> by which interaction of the valence
+electrons of participating atoms in the bonding forms a hybrid atomic orbital. For example, we have the bonding
+between carbon atoms in single bond (C-C bond) which forms a sp<sup>3</sup> hybridized orbital.</p>
+<div class="centerme"><img src="./imginorg/carbonhybrid.JPG"></div>
+<p>This diagram shows that the valence electrons of carbon forms a hybrid orbital indicated by
+2s,2p<sub>x</sub>,2p<sub>y</sub>, and 2p<sub>z</sub> which is an example of sp<sup>3</sup> orbital. They are distribute eqaully
+to form a single bond. Other hybrids that can be formed are sp<sup>2</sup> (example is from carbon-carbon double bond), sp(
+example is from carbon-carbon from triple bond), sp<sup>3</sup>d and sp<sup>3</sup>d<sup>2</sup> (formed from expanded octet rule). </p>
+</section>
+<div id="content3">
+<h4><a name="vsepr">VSEPR Theory</a></h4>
+<p>VSEPR which stands for "Valence Shell Electron Pair Repulsion" Theory is a bonding theory that focuses
+on predicting the shape or geometry of the molecule with assuming that the valence electrons are responsible
+for their framework. Geometries can be classified into two groups which are electronic geometry (in terms of
+arrangement of electron groups) and molecular geometry (in terms of arrangement of atoms in three-dimensional space).
+These two geometries follow the repulsion strength according to VSEPR theory that states that Bonding Pair &#8722; Lone Pair
+is less than Lone Pair &#8722; Lone Pair relationship. Table of geometries are shown below.</p>
+<div class="equation"><strong>Repulsion Strength:</strong> Bonding Pair&#8722;Lone Pair &lt; Lone Pair&#8722;Lone Pair </div>
+<table class="discov">
+	<tr>
+		<th>Class of Molecules</th>
+		<th style="text-align:center;">Total Number of Electron Pairs</th>
+		<th>Bonding Pairs</th>
+		<th>Lone Pairs</th>
+		<th>Electronic Geometry</th>
+		<th>Molecular Geometry</th>
+		<th>Hybridization of Central Atom</th>
+		<th>Polarity</th>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>2</sub></td>
+		<td style="text-align:center;">2</td>
+		<td>2</td>
+		<td>0</td>
+		<td>Linear</td>
+		<td>Linear</td>
+		<td style="text-align:center;">sp</td>
+		<td>Nonpolar</td>
+	</tr>
+
+	<tr>
+		<td style="text-align:center;">AB<sub>3</sub></td>
+		<td style="text-align:center;">3</td>
+		<td>3</td>
+		<td>0</td>
+		<td>Trigonal Planar</td>
+		<td>Trigonal Planar</td>
+		<td style="text-align:center;">sp<sup>2</sup></td>
+		<td>Nonpolar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>3</sub></td>
+		<td style="text-align:center;">3</td>
+		<td>2</td>
+		<td>1</td>
+		<td>Trigonal Planar</td>
+		<td>Bent</td>
+		<td style="text-align:center;">sp<sup>2</sup></td>
+		<td>Polar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>4</sub></td>
+		<td style="text-align:center;">4</td>
+		<td>4</td>
+		<td>0</td>
+		<td>Tetrahedral</td>
+		<td>Tetrahedral</td>
+		<td style="text-align:center;">sp<sup>3</sup></td>
+		<td>Nonpolar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>3</sub>E</td>
+		<td style="text-align:center;">4</td>
+		<td>3</td>
+		<td>1</td>
+		<td>Tetrahedral</td>
+		<td>Trigonal Pyramidal</td>
+		<td style="text-align:center;">sp<sup>3</sup></td>
+		<td>Polar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>2</sub>E<sub>2</sub></td>
+		<td style="text-align:center;">4</td>
+		<td>2</td>
+		<td>2</td>
+		<td>Tetrahedral</td>
+		<td>Bent</td>
+		<td style="text-align:center;">sp<sup>3</sup></td>
+		<td>Polar</td>
+	</tr>
+	<tr>
+ 		<td style="text-align:center;">AB<sub>5</sub></td>
+ 		<td style="text-align:center;">5</td>
+ 		<td>5</td>
+ 		<td>0</td>
+ 		<td>Trigonal Bipyramidal</td>
+ 		<td>Trigonal Bipyramidal</td>
+ 		<td style="text-align:center;">sp<sup>3</sup>d</td>
+ 		<td>Nonpolar</td>
+ 	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>4</sub>E</td>
+		<td style="text-align:center;">5</td>
+		<td>4</td>
+		<td>1</td>
+		<td>Trigonal Bipyramidal</td>
+		<td>Seesaw</td>
+		<td style="text-align:center;">sp<sup>3</sup>d</td>
+		<td>Polar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>3</sub>E<sub>2</sub></td>
+		<td style="text-align:center;">5</td>
+		<td>3</td>
+		<td>2</td>
+		<td>Trigonal Bipyramidal</td>
+		<td>T-shaped</td>
+		<td style="text-align:center;">sp<sup>3</sup>d</td>
+		<td>Polar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>2</sub>E<sub>3</sub></td>
+		<td style="text-align:center;">5</td>
+		<td>2</td>
+		<td>3</td>
+		<td>Trigonal Bipyramidal</td>
+		<td>Linear</td>
+		<td style="text-align:center;">sp<sup>3</sup>d</td>
+		<td>Nonpolar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>6</sub></td>
+		<td style="text-align:center;">6</td>
+		<td>6</td>
+		<td>0</td>
+		<td>Octahedral</td>
+		<td>Octahedral</td>
+		<td style="text-align:center;">sp<sup>3</sup>d<sup>2</sup></td>
+		<td>Nonpolar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>5</sub>E</td>
+		<td style="text-align:center;">6</td>
+		<td>5</td>
+		<td>1</td>
+		<td>Octahedral</td>
+		<td>Square Pyramidal</td>
+		<td style="text-align:center;">sp<sup>3</sup>d<sup>2</sup></td>
+		<td>Polar</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">AB<sub>4</sub>E<sub>2</sub></td>
+		<td style="text-align:center;">6</td>
+		<td>4</td>
+		<td>2</td>
+		<td>Octahedral</td>
+		<td>Square Planar</td>
+		<td style="text-align:center;">sp<sup>3</sup>d<sup>2</sup></td>
+		<td>Nonpolar</td>
+	</tr>
+</table>
+<p>Take note that the purpose of determining electronic and molecular geometry is to identify
+the polarity of the compound.</p>
+</div>
+<div id="content4">
+<div class="centerme"><img src="./imginorg/molegeom.JPG" height="500"/></div>
+<div class="caption">Diagrams of Molecular Geometry (Chang, 2007)</div>
+<p>Examples of Molecules that exhibit the following electronic geometry (EG) and molecular geometry (MG):</p>
+<ul>
+<li>BH<sub>3</sub> &nbsp EM: <strong>Trigonal Planar</strong>  MG: <strong>Trigonal Planar</strong></li>
+<li>H<sub>2</sub>O &nbsp EM: <strong>Trigonal Planar</strong>  MG: <strong>Bent</strong></li>
+<li>CF<sub>4</sub> &nbsp EM: <strong>Tetrahedral</strong>  MG: <strong>Tetrahedral</strong></li>
+<li>NH<sub>3</sub> &nbsp EM: <strong>Tetrahedral</strong>  MG: <strong>Trigonal Pyramidal</strong></li>
+<li>PCl<sub>5</sub> &nbsp EM: <strong>Trigonal Bipyramidal</strong>  MG: <strong>Trigonal Bipyramidal</strong></li>
+<li>ClF<sub>3</sub> &nbsp EM: <strong>Trigonal Bipyramidal</strong>  MG: <strong>T-shaped</strong></li>
+<li>Mo(CO)<sub>6</sub> &nbsp EM: <strong>Octahedral</strong>  MG: <strong>Octahedral</strong></li>
+</ul>
+</div>
+<div id="pageop">
+<h4><a name="mo">Molecular Orbital Theory</a></h4>
+<p>The last bonding theory to be discussed is the molecular orbital theory. It demonstrates the mixing of atomic
+orbitals with the concept of the orbital as a wavefunction. Bonding orbitals are the constructive interferences while
+antibonding-orbitals represent the destructive interferences of a wave. To illustrate molecular orbital diagrams,
+it is a linear combination of atomic orbitals. Molecular orbital diagram
+is the most effective way to show properties such as bond orders,paramagnetism, or diagmagnetic property of
+a molecule. Consider the molecular orbital diagram of H<sub>2</sub> molecule:</p>
+<div class="centerme"><img src="./imginorg/MOtheory.JPG" height="180"/></div>
+
+<p>As you can observe in illustrating molecular orbital diagram, atomic orbital on the sides is for the individual H atom
+while at the center are the  mixed orbitals (bonding orbitals at the bottom and anti-bonding orbitals at the top). Filling up
+of the electrons still follows the fundamuntal rules such as Aufbau principle, Pauli exclusion, and Hund's rule. Lower energy levels
+are the bonding orbitals (&#963;) and anti-bonding orbitals (&#963;*) represents a higher energy level. With this separation, you can
+now determine the property called <strong>bond order</strong>. It is a form of measurement that identifies the number of electrons
+involved in a bond between two atoms in a molecule. It is a good indicator for bond stability by evaluating the molecular orbital diagram.
+The formula for finding bond order with M.O. theory is:</p>
+<div class="frac"><div class="maineq"> Bond Order =  </div><span class="Fraction"><span class="Numerator">1</span>
+<span class="Denominator">2</span></span>( Total e<sup>&#8722;</sup> &nbsp at &#963; orbital &#8722; Total e<sup>&#8722;</sup> &nbsp at &#963;* orbital)</div>
+<p>Another property that can be identified in M.O. theory is paramagnetism or diamagnetism of a molecule. As discussed on the lesson
+on electronic configurations, diamagnetism is exhibited on paired electrons while paramagnetism is on unpaired electrons. As the valence
+electrons on the molecular orbital diagram is shown, you can determine if the molecule is paramagnetic or diamagnetic. </p>
+<h4>Guidelines or Patterns in Making M.O. Diagram with Homogeneous Atoms </h4>
+<p>Since similar atoms have same energy levels and electronegativity they exhibit molecular orbital diagrams wit some patterns when they
+bond to each other (at the valence p-orbital). For less electronegative elements such as boron (B), carbon (C), and nitrogen (N), they have a M.O. diagram pattern
+shown:</p>
+<div class="centerme"><img src="./imginorg/MOpattern1.JPG" height="250"/></div>
+<p>For more electronegative elements such as Oxygen (O), Fluorine (F), and Neon (Ne), their pattern in M.O. diagram is:</p>
+<div class="centerme"><img src="./imginorg/MOpattern2.JPG" height="300" width="800"/></div>
+
+<p>Applying the concepts of molecular orbital theory, identify the  M.O. diagram for O<sub>2</sub> molecule, its bond order, and if it is
+paramagnetic or diamagnetic. </p>
+<div class="viewbutton"><button class="button_2" onclick="viewMorbital()">View Solution and Answer</button></div>
+<div id="oxygenMO" hidden>
+<p>The molecular orbital diagram of O<sub>2</sub> valence electron which is at 2p<sup>4</sup>:</p>
+<div class="centerme"><img src="./imginorg/MOanswer.JPG" height="200"/></div>
+<p>Calculating the bond order based on the diagram:</p>
+<div class="frac"><div class="maineq"> Bond Order of O<sub>2</sub> =  </div><span class="Fraction"><span class="Numerator">1</span>
+<span class="Denominator">2</span></span>( 6 e<sup>&#8722;</sup> &nbsp at &#963; orbital &#8722; 2 e<sup>&#8722;</sup> &nbsp at &#963;* orbital)</div>
+<div class="equation"> Bond Order of O<sub>2</sub> &nbsp = &nbsp <strong>2</strong></div>
+<p>Since the last electrons filled in the diagram are unpaired, O<sub>2</sub> molecule exhibits <strong>paramagnetism</strong>.</p>
+</div>
+	<div class="btn-group">
+  <form action="inorg1.html"><button class="button">Previous Page</button></form>
+  <form action="inorg3.html"><button class="button">Next Page</button></form>
+</div><br>
+
+	<footer>
+		<div class="equation">Bryan's SciTutor Copyright &copy; 2020 All Rights Reserved.</div>
+		</footer>
+</div>
+
+ </div>
+</section>
+
+	</body>
+</html>
