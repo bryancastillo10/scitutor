@@ -55,73 +55,44 @@ margin-top:10px;
 margin-bottom:10px;
 }
 
-/*Secondary NavigationBar*/
-.lec h3{
-text-decoration: none;
-text-align:left;
-font-size: 20px;
-color:#fff;
-padding: 10px;
+/*pop up windows*/
+.popup-bg1, .popup-bg2, .popup-bg3{
+  width:100%;
+  height:70%;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display:none;
 }
 
-.lec ul li a {
-text-decoration: none;
-font-size: 18px;
-color:#fff;
-margin-left: 10px;
-margin-right:10px;
-line-height: 20px;
-padding:10px;
-border-bottom: 1px solid #fff;
-display: block;
+.outlinegchm, .outlineinorg, .outlinephychm{
+  width:500px;
+  height:350px;
+  background-color: #239B56;
+  opacity:0.8;
+  color:#ffffff;
+  border-radius: 10px;
+  text-align:justify;
+  padding:20px;
+  position:relative;
+}
+.close1, .close2, .close3{
+  position:absolute;
+  top:0;
+  right:14px;
+  font-size:40px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
-.lec ul li a:hover{
-color:yellow;
+.close1:hover, .close2:hover{
+  font-weight: bold;
 }
 
-.submenu-1{
-display:none;
+.viewoutline{
+    padding-bottom: 10px;
 }
-.submenu-1 ul li, .submenu-x ul li{
-list-style: none;
-}
-
-.targethover:hover .submenu-1{
- position: absolute;
- display: block;
- margin-top: -42px;
- margin-left: 140px;
- background:#239B56;
-}
-
-.targethover-2:hover .submenu-2, .targethover-3:hover .submenu-3, .targethover-4:hover .submenu-4{
- position:absolute;
- display: block;
- width:250px;
- margin-top: -42px;
- margin-left: 100px;
- background:#239B56;
-}
-.fa-angle-right{
-margin-left:5px;
-}
-.submenu-2, .submenu-3,.submenu-4,.submenu-x{
-display:none;
-}
-
-.hoverexam:hover .submenu-x{
- position:absolute;
- display: block;
- margin-top: -42px;
- margin-left: 180px;
- background:#239B56;
-}
-
-
-
-
-
 /*header section */
 .logo {
 width:100px;
@@ -239,21 +210,12 @@ float:right;
 margin-top:10px;
 }
 
-#newsletter form button:hover, #courses form button:hover, #content4 form button:hover{
+#newsletter form button:hover, #courses form button:hover, .viewoutline button:hover{
 cursor:pointer;
 color:#4169E1;
 }
 
-#lastbutton form button:hover{
-cursor:pointer;
 
-}
-
-#newsletter input[type="email"]{
-padding:4px;
-height:25px;
-width:250px;
-}
 
 /*Paragraphs of statements */
 .parjustify {
@@ -345,7 +307,31 @@ color:#ffffff;
 background-color:#228B22;
 text-align:center;
 }
+/*button for pages*/
+.btn-group .button {
+  background-color: #4CAF50;
+  border: 1px solid green;
+  color: #ffffff;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float:right;
+}
 
+.btn-group .button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group .button:hover {
+  background-color: #249821;
+}
+
+.btn-group{
+  padding: 0px 0px 20px 280px;
+}
 
 /*Media Queries*/
 @media(max-width: 768px){
@@ -360,24 +346,22 @@ aside#sidebar {
   text-align:justify;
   width:100%;
 }
-  .lec ul li a{
-width:100%;
-}
+
 .centerimg{
   text-align:center;
 }
-.gridcontainer{
-  display:contents;
-  overflow-x: hidden;
-  grid-template-columns:10fr;
-  grid-template-rows:10fr 30fr 30fr 30fr 30fr 30fr;
-  grid-template-areas: "nav" "content1" "content2" "main" "content3" "content4" "pageop";
+
+.btn-group{
+    padding-bottom: 30px;
+    padding-left: 300px;
+    margin-bottom: 70px;
+    text-align:center;
+  
 }
 
-  #content1 h3, #main h3 {
-      display:inline-flex;
-  }
-
+.btn-group .button{
+  width:100%;
+}
 header{
 padding-bottom:20px;
 }
@@ -391,7 +375,7 @@ padding-bottom:20px;
 }
 
 
-#lastbutton form, .discov{
+ .discov{
   width:100%;
   display: grid;
 }
