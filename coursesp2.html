@@ -5,6 +5,7 @@
 	<meta name="description" content="student-friendly tutorial">
 	<meta name="keywords"   content="online course, science, biology,chemistry">
 	<meta name="author" content="Bryan Castillo">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<title>Courses at Bryan's SciTutor</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,23 +27,34 @@
 	</section>
 
 
-	<section id=main"><br>
+	<section id="main"><br>
 	<div class="container">
 	<article id="main-col">
 	<h1 class="coursetitle">Courses Available</h1><br>
 	<ul id="courses">
 	<li>
-	<h3>Physical Chemistry</h3>
-	<p class="parjustify">Physical Chemistry Course focuses on the chemistry both at the macroscopic
-		and particulate state of matter. Its principles were also based on the context of physics on how motion,
-		energy, force, time, and thermodynamics were demonstrated. In this section, topics include gases, basic thermodynamics,
-		, kinetics, phases, electrochemistry, photochemistry, and quantum chemistry.
-	</p>
-		<form action="phychm1.html">
+	<h3>General Biology</h3>
+	<p class="parjustify">General Biology Course is for the foundation in knowledge on biological systems or
+	living systems. This helps you to know basic terms and concepts in studying life that can help you better understand
+  higher fields of biology such as biochemistry.</p>
+
+
+		<form action="genbio.html">
 			<button class="button_2">Click Here to Start</button>
 		</form>
 	</li>
 	<li>
+	<h3>Biochemistry</h3>
+		<p class="parjustify">Biochemistry Course is for the science of chemical processes and interactions that involves
+			within a living organism. This is a combination of the concepts of two sciences which are biology and chemistry
+			in order to understand the behavior of organisms with respect to its chemical compositions.	In this section, you learn
+			in depth discussions on biomolecules.
+		</p>
+			<form action="biochm1.html">
+				<button class="button_2">Click Here to Start</button>
+			</form>
+		</li>
+		<li>
 	<h3>Organic Chemistry</h3>
 	<p class="parjustify">Organic Chemistry Course is mainly for the chemistry of "carbons". The topics are mainly on the principles on the structures,
 		interactions, properties, and organic reactions of molecules with carbon bonds.
@@ -51,21 +63,13 @@
 			<button class="button_2">Click Here to Start</button>
 		</form>
 	</li>
-	<li>
-	<h3>Biohemistry</h3>
-	<p class="parjustify">Biochemistry Course is for the science of chemical processes and interactions that involves
-		within a living organism. This is a combination of the concepts of two sciences which are biology and chemistry
-		in order to understand the behavior of organisms with respect to its chemical compositions.	In this section, you learn
-		in depth discussions on biomolecules.
-	</p>
-		<form action="biochm1.html">
-			<button class="button_2">Click Here to Start</button>
-		</form>
-	</li>
+
 </ul>
-<section id="lastbutton">
-	<form action="courses.html"><button class="button_3">Previous Page</button></form>
-</section>
+<div class="btn-group">
+<form action="coursesp3.html"><button class="button">Next Page</button></form>
+<form action="courses.html"><button class="button">Previous Page</button></form>
+</div>
+
 	</article>
 
 	<aside id="sidebar">
@@ -96,5 +100,38 @@ bag to expand. </p>
 		<footer>
 		<p>Bryan's SciTutor Copyright &copy; 2020 All Rights Reserved.</p>
 		</footer>
+		<script>
+			//GenBio Outline//
+		document.getElementById('genbio').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg1').style.display = 'flex';
+		});
+
+		document.querySelector('.close1').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg1').style.display = 'none';
+		});
+			//BioChem Outline//
+		document.getElementById('biochem').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg2').style.display = 'flex';
+		});
+
+		document.querySelector('.close2').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg2').style.display = 'none';
+		});
+			//Orgchem Outline//
+			document.getElementById('orgchem').addEventListener('click',
+			function(){
+				document.querySelector('.popup-bg3').style.display = 'flex';
+			});
+
+			document.querySelector('.close3').addEventListener('click',
+			function(){
+				document.querySelector('.popup-bg3').style.display = 'none';
+			});
+
+		</script>
 	</body>
 </html>
