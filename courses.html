@@ -26,7 +26,7 @@
 	</section>
 
 
-	<section id=main"><br>
+	<section id="main"><br>
 	<div class="container">
 	<article id="main-col">
 	<h1 class="coursetitle">Courses Available</h1><br>
@@ -37,6 +37,24 @@
 	in order to prepare into the other fields of higher chemistry. It includes states and properties of matter,
 fundamental chemical observations, chemical formula and chemical equations, mass and moles
 relationships, and chemical equilibria.</p>
+
+<div class="viewoutline">
+  <button id="gchem" class="button_2">View Course Outline</button>
+</div>
+<div class="popup-bg1">
+  <div class="outlinegchm">
+    <div class="close1">+</div>
+  		<h4>General Chemistry Outline</h4>
+			<p><strong>Part 1:</strong> Introduction to General Chemistry, States of Matter, Properties of Matter,
+			Brief History of Atom Discovery, Fundamental Chemical Observations, Periodic Table of Elements, Notation on Elements,
+		  Molecules and Chemical Formula</p>
+				<p><strong>Part 2:</strong> Chemical Bonding, Chemical Equations, Types of Chemical Reactions, Mass and Moles Relationships,
+				Limiting Reactants and Percentage Yields, Elemental and Combustion Analysis</p>
+				<p><strong>Part 3:</strong> Acids and Bases, the pH Scale, Chemical Equilibrium, Reaction Quotients, Chemical Stresses</p>
+					<p><strong>Part 4:</strong> Ion Product of Water, Acid-Base Equilibria, Common Ion Effect, Introduction to Electrochemistry,
+					Oxidation Numbers</p>
+  </div>
+</div>
 		<form action="gchm1.html">
 			<button class="button_2">Click Here to Start</button>
 		</form>
@@ -44,28 +62,63 @@ relationships, and chemical equilibria.</p>
 
 		<li>
 		<h3>Inorganic Chemistry</h3>
-		<p class="parjustify">Inorganic Chemistry Course is an advanced study on some topics input
+		<p class="parjustify">Inorganic Chemistry Course is an advanced study on some topics shown on
 		general chemistry to further understand the nature of chemical interactions especially on each of the
-	elements in the periodic table. Some topic includes periodic trends, effective nuclear charges, quantum numbers, nuclear
-	chemistry, symmetries, solid and liquid state chemistry, and crystal field theory.</p>
+	elements in the periodic table. Some topic includes periodic trends, electronic configurations, quantum numbers,
+	bonding theories, solid and liquid state chemistry, and crystal field theory.</p>
+	<div class="viewoutline">
+	  <button id="inorgchem" class="button_2">View Course Outline</button>
+	</div>
+	<div class="popup-bg2">
+	  <div class="outlineinorg">
+	    <div class="close2">+</div>
+	  		<h4>Inorganic Chemistry Outline</h4>
+				<p><strong>Part 1:</strong> Introduction to  Inorganic Chemistry, Rules in Electron Filling an Orbital, Electronic Configuration,
+				Quantum Numbers, Periodic Trends</p>
+					<p><strong>Part 2:</strong> Lewis Structures, Formal Charges, Deviations of Octet Rule, Valence Bond Theory, VSEPR Theory, and
+					Molecular Orbital Theory</p>
+					<p><strong>Part 3:</strong> Intermolecular Forces of Attraction, Liquid State Properties, Solid State Chemistry, Nomenclature of
+					Metal Ligand Complexes</p>
+						<p><strong>Part 4:</strong>Symmetry and Point Groups of Molecules, Irreducible Representations, Character Tables, Crystal Field Theory,
+						Rules of Electronic Transitions</p>
+	  </div>
+	</div>
+
 			<form action="inorg1.html">
 				<button class="button_2">Click Here to Start</button>
 			</form>
 		</li>
 		<li>
-		<h3>Analytical Chemistry</h3>
-		<p class="parjustify">Analytical Chemistry Course is for the science of obtaining, processing, and quantifying
-			a certain composition of matter. This section focuses on the classical and instrumental methods of analysis. To better understand some topics, basic knowledge on statistics ins
-			applied. Topics in analytical chemistry focuses on gravimetric methods, titrimetric methods, and instrumentations.
-		</p>
-			<form action="anachm1.html">
+		<h3>Physical Chemistry</h3>
+		<p class="parjustify">Physical Chemistry Course focuses on the chemistry both at the macroscopic
+		and particulate state of matter. Its principles were also based on the context of physics on how motion,
+		energy, force, time, and thermodynamics were demonstrated. In this section, topics include gases, basic thermodynamics,
+		 kinetics, phase equilibria, electrochemistry, photochemistry, and quantum chemistry.</p>
+		<div class="viewoutline">
+		  <button id="phychem" class="button_2">View Course Outline</button>
+		</div>
+		<div class="popup-bg3">
+		  <div class="outlinephychm">
+		    <div class="close3">+</div>
+		  		<h4>Physical Chemistry Outline</h4>
+					<p><strong>Part 1:</strong> Gases and its Properties, Ideal Gas Law, Equation of States, Kinetic Molecular Theory of
+						Gases, Maxwell Relations, Fundamentals of Thermodynamics</p>
+						<p><strong>Part 2:</strong> First Law of Thermodynamics, Second and Third Law of Thermodynamics, Free Energy and Chemical
+						Equilibria</p>
+						<p><strong>Part 3:</strong>Solutions, Thermodynamics of Solutions, Phase Equilibria, Electrochemical Equilibrium, Chemical Kinetics</p>
+							<p><strong>Part 4:</strong> Nuclear Chemistry, Fundamentals of Quantum Theory,  The Schrodinger Equation, Quantum Mechanical
+							Models</p>
+		  </div>
+		</div>
+
+			<form action="phychm1.html">
 				<button class="button_2">Click Here to Start</button>
 			</form>
 		</li>
 </ul>
-<section id="lastbutton">
-	<form action="coursesp2.html"><button class="button_3">Next Page</button></form>
-</section>
+<div class="btn-group">
+<form action="coursesp2.html"><button class="button">Next Page</button></form>
+</div>
 	</article>
 
 	<aside id="sidebar">
@@ -100,5 +153,39 @@ use of compasses in locating places. Its needle responses to the magnetic field 
 		<footer>
 		<p>Bryan's SciTutor Copyright &copy; 2020 All Rights Reserved.</p>
 		</footer>
+
+		<script>
+			//GenChem Outline//
+		document.getElementById('gchem').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg1').style.display = 'flex';
+		});
+
+		document.querySelector('.close1').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg1').style.display = 'none';
+		});
+			//InorgChem Outline//
+		document.getElementById('inorgchem').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg2').style.display = 'flex';
+		});
+
+		document.querySelector('.close2').addEventListener('click',
+		function(){
+			document.querySelector('.popup-bg2').style.display = 'none';
+		});
+			//PhyChem Outline//
+			document.getElementById('phychem').addEventListener('click',
+			function(){
+				document.querySelector('.popup-bg3').style.display = 'flex';
+			});
+
+			document.querySelector('.close3').addEventListener('click',
+			function(){
+				document.querySelector('.popup-bg3').style.display = 'none';
+			});
+
+		</script>
 	</body>
 </html>
