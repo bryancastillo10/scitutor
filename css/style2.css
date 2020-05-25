@@ -388,6 +388,8 @@ margin-right:auto;
   list-style:none;
 }
 .equation{
+  font-family: serif;
+  font-size: 17px;
   text-align:center;
 }
 .centerme{
